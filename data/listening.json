@@ -1,6 +1,147 @@
 {
-  "generated_at": "1970-01-01T00:00:00.000Z",
+  "generated_at": "2026-08-24T20:48:57.194Z",
   "range": "short_term",
   "range_label": "nas últimas 4 semanas",
-  "tracks": []
+  "tracks": [
+    {
+      "name": "4EVA",
+      "artist": "KAYTRAMINÉ, Aminé, KAYTRANADA, Pharrell Williams",
+      "album": "KAYTRAMINÉ",
+      "image": "https://i.scdn.co/image/ab67616d00001e0259a76b58fa95e166986866e7",
+      "url": "https://open.spotify.com/track/2S4HEo4LCcIbU1AcEQ4RQZ"
+    },
+    {
+      "name": "La Vida Tombola",
+      "artist": "Manu Chao",
+      "album": "La Radiolina",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e37f9a3fdedc3d7dc2c49b26",
+      "url": "https://open.spotify.com/track/3U34tMYhMbr6tBWZdCUp6f"
+    },
+    {
+      "name": "From U. S. Of Piauí",
+      "artist": "Luiz Gonzaga",
+      "album": "Aquilo Bom!",
+      "image": "https://i.scdn.co/image/ab67616d00001e0241436672034df08c16ab82e7",
+      "url": "https://open.spotify.com/track/3rjyGiPpGYddhLVG8jhBXF"
+    },
+    {
+      "name": "Mingau de Açai",
+      "artist": "Mestre Cupijó e Seu Ritmo",
+      "album": "Siriá (Analog Africa No. 16)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02074ff39aef3046e470db59b1",
+      "url": "https://open.spotify.com/track/1s2va8g3aG5xNZANRUbid6"
+    },
+    {
+      "name": "What You Know",
+      "artist": "Two Door Cinema Club",
+      "album": "Tourist History",
+      "image": "https://i.scdn.co/image/ab67616d00001e02852930b799f484bf60faacb2",
+      "url": "https://open.spotify.com/track/4iZxeyibg6w4EFCOoAQ6Eh"
+    },
+    {
+      "name": "Bellator",
+      "artist": "Skepta",
+      "album": "All In",
+      "image": "https://i.scdn.co/image/ab67616d00001e0243cad2449ee0004ecd189af4",
+      "url": "https://open.spotify.com/track/0B0Y6slHV9SzSXNOareNTS"
+    },
+    {
+      "name": "Reloginho",
+      "artist": "Nêgo Jhá",
+      "album": "Reloginho",
+      "image": "https://i.scdn.co/image/ab67616d00001e025ada647da9fe6bb4a12d5892",
+      "url": "https://open.spotify.com/track/0rj1IT0oVeN9fomV6LjQye"
+    },
+    {
+      "name": "U - Informe",
+      "artist": "Black Alien",
+      "album": "Babylon By Gus Vol. 1 - o Ano do Macaco",
+      "image": "https://i.scdn.co/image/ab67616d00001e022b1678cbc2c4ec91c6da1cf1",
+      "url": "https://open.spotify.com/track/2ALa0vqA64VJ6LTijDbGuP"
+    },
+    {
+      "name": "QUE LOUCURA",
+      "artist": "DJ EXE, CACAU CHUU",
+      "album": "QUE LOUCURA",
+      "image": "https://i.scdn.co/image/ab67616d00001e0249248c0bd4b98457fce00a1a",
+      "url": "https://open.spotify.com/track/2J0Nuqw3GbSPRRrTO7P6V8"
+    },
+    {
+      "name": "Ginga",
+      "artist": "Robson Jorge, Lincoln Olivetti",
+      "album": "Robson Jorge e Lincoln Olivetti",
+      "image": "https://i.scdn.co/image/ab67616d00001e023bcd1849d72fd6d81bd69142",
+      "url": "https://open.spotify.com/track/2KDF5lrsQNBN0a89SwkwDg"
+    },
+    {
+      "name": "Rosetta Tharpe",
+      "artist": "Nill, Ryam Beatz",
+      "album": "Good Smell, Vol. 2",
+      "image": "https://i.scdn.co/image/ab67616d00001e02f35cab9280102a49d5a2011e",
+      "url": "https://open.spotify.com/track/3f2uHape2pYafBuH6gmidF"
+    },
+    {
+      "name": "Children",
+      "artist": "Robert Miles",
+      "album": "Children (Dance Vault Mixes)",
+      "image": "https://i.scdn.co/image/ab67616d00001e0285a2da83b5b340365ae7d8cd",
+      "url": "https://open.spotify.com/track/4wtR6HB3XekEengMX17cpc"
+    },
+    {
+      "name": "Punch in the Face",
+      "artist": "Jme",
+      "album": "Famous?",
+      "image": "https://i.scdn.co/image/ab67616d00001e02fbf1db6861560bd5ffbf8930",
+      "url": "https://open.spotify.com/track/4zCPqDjuoNJuhkGU3dYPxS"
+    },
+    {
+      "name": "Set Me Free - Radio Edit",
+      "artist": "House Boulevard, Cassioplay, G. Martini, Samara Iacono, Dj Tom Hopkins, Naraine W.",
+      "album": "Set Me Free",
+      "image": "https://i.scdn.co/image/ab67616d00001e02f8cb54f3c51b55724089786e",
+      "url": "https://open.spotify.com/track/6WL2fauODFhHs31OJBVM3m"
+    },
+    {
+      "name": "One - Radio Edit",
+      "artist": "Swedish House Mafia",
+      "album": "Until Now",
+      "image": "https://i.scdn.co/image/ab67616d00001e02544023aa98872d4deb347465",
+      "url": "https://open.spotify.com/track/1AQxJtGlb8bqi1vNHL9CRR"
+    },
+    {
+      "name": "Fuzuê no Baile da China 2.0",
+      "artist": "DJ Ricardinho, DJ Jeffinho da China, FIRMA 21",
+      "album": "Fuzuê no Baile da China",
+      "image": "https://i.scdn.co/image/ab67616d00001e020a24b93d20d6a64b3b0f72c2",
+      "url": "https://open.spotify.com/track/2DcwHwTMjWhsqorROjH5tj"
+    },
+    {
+      "name": "Falador Passa Mal",
+      "artist": "Os Originais Do Samba",
+      "album": "É Preciso Cantar",
+      "image": "https://i.scdn.co/image/ab67616d00001e02737412b17d06dc42e1995ea1",
+      "url": "https://open.spotify.com/track/2bKOB6DLw8inrQC8UmghQN"
+    },
+    {
+      "name": "SUTOMORE",
+      "artist": "browse Tito, lost tapes",
+      "album": "SUTOMORE",
+      "image": "https://i.scdn.co/image/ab67616d00001e026c3da73d36f699e6b095ebe5",
+      "url": "https://open.spotify.com/track/2lYQIRDaUqOFvRs57OGdwh"
+    },
+    {
+      "name": "Amantes da Foda",
+      "artist": "Mc Rodrigo do CN, DJ JOAO DA INESTAN",
+      "album": "Amantes da Foda",
+      "image": "https://i.scdn.co/image/ab67616d00001e024bd280000f1a406f999cb8b2",
+      "url": "https://open.spotify.com/track/4DhDNNhIDdduS6nZMbSMbs"
+    },
+    {
+      "name": "Eu Vou Te Hipnotizar",
+      "artist": "DJ Marlboro, Mc Mágico, Mulher Melão",
+      "album": "Trilogia Big Mix 2010 - Pancadão Mix",
+      "image": "https://i.scdn.co/image/ab67616d00001e02d2758b382fe9a99c3b5b3ec7",
+      "url": "https://open.spotify.com/track/5bjhcYDSfXqytQsyZ2e9hD"
+    }
+  ]
 }
