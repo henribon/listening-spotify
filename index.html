@@ -17,7 +17,7 @@
 /*
  * Mesmos tokens do bonbap.com.br. A fonte vem da raiz do domínio: como o
  * CNAME está no repo de user site, este project site é servido no mesmo
- * host, então /fonts/ resolve. Fora dele, o fallback entra pelo swap.
+ * host, então /fonts/ resolve.
  */
 @font-face {
   font-family: "Valmist";
@@ -32,6 +32,7 @@
   --muted: #6b6b73;
   --line: #e6e6e9;
   --hover: #f6f6f7;
+  --gap: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,7 +57,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* O texto fica na coluna estreita; o carrossel corre a largura toda. */
 .wrap {
   max-width: 46rem;
   margin: 0 auto;
@@ -85,47 +85,59 @@ h1 {
 
 /* ----------------------------------------------------------- carrossel --- */
 
+/*
+ * Duas faixas com as mesmas músicas correndo em sentidos opostos.
+ *
+ * Desktop: uma linha em cima da outra, andando na horizontal.
+ * Mobile:  duas colunas lado a lado, andando na vertical.
+ *
+ * Cada faixa contém duas cópias idênticas da lista. Deslizar até -50% move
+ * exatamente uma cópia, e nesse instante o que está na tela é igual ao
+ * quadro inicial — por isso o loop não tem emenda. A faixa invertida usa a
+ * mesma animação com `animation-direction: reverse`.
+ */
 .carousel {
   margin-top: 3rem;
   overflow: hidden;
-  /* Some nas pontas em vez de cortar seco na borda da tela. */
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
   -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
 }
 
 .carousel[hidden] { display: none; }
 
-/*
- * A fita tem duas cópias idênticas da lista lado a lado. Deslizar até -50%
- * move exatamente uma cópia, e nesse instante o que está na tela é igual ao
- * quadro inicial — daí o loop não tem emenda visível.
- */
-.track {
+.lane {
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  gap: var(--gap);
   width: max-content;
   margin: 0;
   padding: 0 1rem;
   list-style: none;
-  animation: slide var(--dur, 90s) linear infinite;
+  animation: desliza-x var(--dur, 90s) linear infinite;
 }
 
-@keyframes slide {
+.lane--reverse { animation-direction: reverse; }
+
+@keyframes desliza-x {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 
+@keyframes desliza-y {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+
 /* Pausa pra dar tempo de mirar e clicar. */
-.carousel:hover .track,
-.carousel:focus-within .track { animation-play-state: paused; }
+.carousel:hover .lane,
+.carousel:focus-within .lane { animation-play-state: paused; }
 
 .item { width: clamp(8.5rem, 20vw, 11rem); flex: none; }
 
-.item a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
+.item a { display: block; text-decoration: none; color: inherit; }
 
 .item img {
   display: block;
@@ -147,8 +159,8 @@ h1 {
   margin-top: 0.625rem;
   font-size: 0.8125rem;
   font-weight: 500;
-  /* Nome de faixa é imprevisível: corta em uma linha só pra não desalinhar
-     a altura dos cartões vizinhos. */
+  /* Nome de faixa é imprevisível: uma linha só, pra não desalinhar a altura
+     dos cartões vizinhos. */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -165,14 +177,54 @@ h1 {
 
 .item a:hover .name { text-decoration: underline; text-underline-offset: 3px; }
 
+/* ------------------------------------------------------------- mobile --- */
+
 /*
- * Sem animação, a fita vira uma faixa rolável na mão. A segunda cópia sai
- * de cena: ela só existe pra emendar o loop.
+ * Abaixo de 48rem (o mesmo ponto de quebra do bonbap.com.br) as duas faixas
+ * viram colunas verticais lado a lado.
+ */
+@media (max-width: 47.999rem) {
+  .carousel {
+    flex-direction: row;
+    height: clamp(26rem, 72vh, 44rem);
+    /* O véu acompanha o eixo do movimento. */
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+    padding: 0 1rem;
+  }
+
+  .lane {
+    flex-direction: column;
+    width: auto;
+    flex: 1;
+    min-width: 0;
+    height: max-content;
+    padding: 0;
+    animation-name: desliza-y;
+  }
+
+  .item { width: 100%; }
+
+  /* Numa coluna estreita o nome ocupa mais espaço que a capa merece. */
+  .item .name { margin-top: 0.5rem; font-size: 0.75rem; }
+  .item .artist { font-size: 0.6875rem; }
+}
+
+/* ------------------------------------------------------------ estático --- */
+
+/*
+ * Sem animação sobra uma faixa só, rolável na mão. A segunda faixa e as
+ * segundas cópias existem apenas pra emendar o loop.
  */
 @media (prefers-reduced-motion: reduce) {
-  .carousel { overflow-x: auto; }
-  .track { animation: none; }
-  .track [aria-hidden="true"] { display: none; }
+  .carousel {
+    display: block;
+    overflow-x: auto;
+    height: auto;
+  }
+  .lane { animation: none; }
+  .lane--reverse { display: none; }
+  .lane [aria-hidden="true"] { display: none; }
 }
 
 :focus-visible { outline: 2px solid var(--muted); outline-offset: 3px; }
@@ -187,31 +239,32 @@ h1 {
 </div>
 
 <section class="carousel" aria-label="Músicas que mais ouvi no Spotify" hidden>
-  <ul class="track" id="track"></ul>
+  <ul class="lane" id="lane-a"></ul>
+  <ul class="lane lane--reverse" id="lane-b" aria-hidden="true"></ul>
 </section>
 
 <script type="module">
 const SRC = 'data/listening.json';
-const VELOCIDADE = 45; // pixels por segundo
+const VELOCIDADE = 45;                                   // pixels por segundo
+const MQ_VERTICAL = window.matchMedia('(max-width: 47.999rem)');
 
 const carousel = document.querySelector('.carousel');
-const track = document.getElementById('track');
+const laneA = document.getElementById('lane-a');
+const laneB = document.getElementById('lane-b');
 const legenda = document.getElementById('legenda');
 
-function item(t, clone) {
+function item(t, decorativo) {
   const li = document.createElement('li');
   li.className = 'item';
-  // A segunda cópia é decorativa: escondê-la do leitor de tela e do foco
-  // evita que a mesma faixa apareça duas vezes na navegação por teclado.
-  if (clone) {
-    li.setAttribute('aria-hidden', 'true');
-  }
+  // Cópias decorativas ficam fora do leitor de tela e da ordem de foco,
+  // senão a mesma faixa apareceria várias vezes na navegação por teclado.
+  if (decorativo) li.setAttribute('aria-hidden', 'true');
 
   const a = document.createElement('a');
   a.href = t.url ?? '#';
   a.target = '_blank';
   a.rel = 'noopener';
-  if (clone) a.tabIndex = -1;
+  if (decorativo) a.tabIndex = -1;
 
   const img = document.createElement('img');
   img.src = t.image ?? '';
@@ -232,25 +285,27 @@ function item(t, clone) {
   return li;
 }
 
-function build(tracks) {
-  // Duas cópias: a animação desliza -50%, que é exatamente uma delas.
-  const items = [
-    ...tracks.map((t) => item(t, false)),
+/** Duas cópias da lista: a animação desliza -50%, que é exatamente uma. */
+function preenche(lane, tracks, laneDecorativa) {
+  lane.replaceChildren(
+    ...tracks.map((t) => item(t, laneDecorativa)),
     ...tracks.map((t) => item(t, true)),
-  ];
-  track.replaceChildren(...items);
-  carousel.hidden = false;
+  );
+}
 
-  // Duração proporcional à largura, pra velocidade não mudar conforme o
-  // número de faixas ou o tamanho da tela.
-  //
-  // Síncrono de propósito: ler scrollWidth já força o layout, e a largura
-  // dos itens vem do CSS, não das imagens. Num requestAnimationFrame isto
-  // não rodaria enquanto a aba estivesse em segundo plano, e o carrossel
-  // ficaria preso na duração de fallback.
-  const umaCopia = track.scrollWidth / 2;
-  if (umaCopia > 0) {
-    track.style.setProperty('--dur', `${Math.round(umaCopia / VELOCIDADE)}s`);
+/**
+ * Velocidade constante em px/s, independente de quantas faixas, do tamanho
+ * da tela ou do eixo. Síncrono de propósito: num requestAnimationFrame isto
+ * não rodaria com a aba em segundo plano, e a fita ficaria presa no
+ * fallback de 90s.
+ */
+function ajustaDuracao() {
+  const vertical = MQ_VERTICAL.matches;
+  for (const lane of [laneA, laneB]) {
+    const umaCopia = (vertical ? lane.scrollHeight : lane.scrollWidth) / 2;
+    if (umaCopia > 0) {
+      lane.style.setProperty('--dur', `${Math.round(umaCopia / VELOCIDADE)}s`);
+    }
   }
 }
 
@@ -261,7 +316,38 @@ try {
   const tracks = (data.tracks ?? []).filter((t) => t.image);
 
   if (tracks.length) {
-    build(tracks);
+    // Mesmas músicas nas duas faixas, mas a de baixo começa da metade da
+    // lista: sem isso as duas ficam espelhadas e a repetição salta aos olhos.
+    const meio = Math.floor(tracks.length / 2);
+    preenche(laneA, tracks, false);
+    preenche(laneB, [...tracks.slice(meio), ...tracks.slice(0, meio)], true);
+
+    carousel.hidden = false;
+    ajustaDuracao();
+
+    // A largura dos itens — e, no mobile, a altura da coluna — muda com a
+    // viewport, então a duração precisa ser recalculada.
+    //
+    // ResizeObserver em vez do evento `resize` da janela: ele observa a
+    // caixa do próprio elemento, então pega também a troca de orientação do
+    // layout, quando a faixa muda de eixo sem a janela mudar de tamanho.
+    // Ajustar --dur não altera a caixa, então não há laço de realimentação.
+    let pendente;
+    const recalcula = () => {
+      clearTimeout(pendente);
+      pendente = setTimeout(ajustaDuracao, 120);
+    };
+
+    const observer = new ResizeObserver(recalcula);
+    observer.observe(carousel);
+    observer.observe(laneA);
+
+    // O ResizeObserver é entregue junto com as etapas de renderização, que
+    // não rodam em aba de segundo plano. O `change` do matchMedia é um
+    // evento comum e chega de qualquer jeito — é ele que garante a troca de
+    // eixo se a pessoa girar o aparelho com a aba escondida.
+    MQ_VERTICAL.addEventListener('change', recalcula);
+
     legenda.textContent =
       `as ${tracks.length} músicas que mais ouvi ${data.range_label ?? 'nas últimas semanas'}`;
   } else {
