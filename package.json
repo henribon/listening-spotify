@@ -1,0 +1,10 @@
+{
+  "name": "listening-spotify",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "auth": "node scripts/auth.mjs",
+    "update": "node scripts/update.mjs"
+  }
+}

@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ouvindo — bonbap</title>
+<meta name="description" content="As 20 músicas que mais ouvi nos últimos 7 dias.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+<link rel="preconnect" href="https://i.scdn.co" crossorigin>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ouvindo — bonbap">
+<meta property="og:description" content="As 20 músicas que mais ouvi nos últimos 7 dias.">
+<meta property="og:url" content="https://bonbap.com.br/listening-spotify/">
+
+<style>
+/*
+ * Mesmos tokens do bonbap.com.br. A fonte vem da raiz do domínio: como o
+ * CNAME está no repo de user site, este project site é servido no mesmo
+ * host, então /fonts/ resolve. Fora dele, o fallback entra pelo swap.
+ */
+@font-face {
+  font-family: "Valmist";
+  src: url("/fonts/TBJValmistDemo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --bg: #ffffff;
+  --fg: #16161a;
+  --muted: #6b6b73;
+  --hover: #f6f6f7;
+  --scrim: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0d0f;
+    --fg: #ededf0;
+    --muted: #8a8a93;
+    --hover: #151518;
+    --scrim: 13, 13, 15;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 400 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden; /* o carrossel é a página inteira, não há o que rolar */
+}
+
+/* ----------------------------------------------------------- carrossel --- */
+
+/*
+ * Um quadrado bem maior que a tela, girado em isometria (rotateX + rotateZ).
+ * Depois da rotação um quadrado de lado S vira um losango de S√2 de largura
+ * por S de altura, então sobra imagem por todos os lados e a tela mostra só
+ * uma fatia do meio.
+ */
+.marquee {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.marquee[hidden] { display: none; }
+
+.marquee-stage {
+  /*
+   * O losango só cobre os cantos da tela se o lado do quadrado for pelo
+   * menos largura/√2 + altura. 71vw é largura/√2, daí o calc. Sem isso
+   * sobram triângulos de fundo vazio nos quatro cantos.
+   *
+   * As 8rem extras são a folga da deriva: as colunas andam ±3rem e sem
+   * isso a ponta delas descobre a borda no meio da animação.
+   */
+  --size: max(56rem, calc(71vw + 100vh + 8rem));
+  --gap: clamp(0.6rem, 1.4vw, 1.25rem);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--size);
+  height: var(--size);
+  /* Centraliza por margem, deixando o slot do transform só pra rotação. */
+  margin: calc(var(--size) / -2) 0 0 calc(var(--size) / -2);
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--gap);
+
+  transform: rotateX(50deg) rotateZ(45deg);
+}
+
+.marquee-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  will-change: transform;
+}
+
+/*
+ * Colunas alternadas derivam em sentidos opostos. Os períodos (13s e 19s)
+ * não são múltiplos um do outro, então o conjunto demora muito a repetir
+ * a mesma configuração.
+ */
+.marquee-col:nth-child(odd)  { animation: drift-down 13s ease-in-out infinite alternate; }
+.marquee-col:nth-child(even) { animation: drift-up   19s ease-in-out infinite alternate; }
+
+@keyframes drift-down {
+  from { transform: translateY(-3rem); }
+  to   { transform: translateY(3rem); }
+}
+@keyframes drift-up {
+  from { transform: translateY(3rem); }
+  to   { transform: translateY(-3rem); }
+}
+
+.marquee img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;       /* capa de álbum é quadrada */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background: var(--hover);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-col { animation: none; }
+}
+
+/* -------------------------------------------------------------- legenda --- */
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.25rem;
+}
+
+/*
+ * O véu que segura a legibilidade do texto. Fica num pseudo-elemento fixo,
+ * cobrindo a viewport toda: se o gradiente morasse na .overlay ele pararia
+ * na largura da coluna de texto e deixaria duas emendas verticais duras.
+ */
+.overlay::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 68% 52% at 50% 50%,
+    rgba(var(--scrim), 0.94) 0%,
+    rgba(var(--scrim), 0.78) 45%,
+    rgba(var(--scrim), 0) 100%
+  );
+}
+
+.overlay-inner {
+  width: 100%;
+  max-width: 34rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.back {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  margin-bottom: 0.75rem;
+}
+.back:hover, .back:focus-visible { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; }
+
+h1 {
+  font-family: Valmist, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.75rem, 11vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.who { margin: 0; font-size: 0.875rem; color: var(--muted); }
+.who strong { color: var(--fg); font-weight: 500; }
+
+:focus-visible { outline: 2px solid var(--muted); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<!-- Começa escondido: o script só revela depois de montar as capas, pra não
+     deixar um retângulo vazio se a requisição falhar. -->
+<section class="marquee" aria-hidden="true" hidden></section>
+
+<div class="overlay">
+  <div class="overlay-inner">
+    <a class="back" href="https://bonbap.com.br/">&larr; bonbap</a>
+    <h1>ouvindo</h1>
+    <p class="who" id="legenda">as 20 músicas que mais toquei nos últimos 7 dias</p>
+  </div>
+</div>
+
+<script type="module">
+const SRC = 'data/listening.json';
+
+const COLUMNS = 6;
+const MIN_TILES = 36; // 6 por coluna: o bastante pra estourar a altura do palco
+
+/**
+ * Repete as capas até dar MIN_TILES sem deixar a mesma imagem colada nela
+ * mesma na emenda de uma volta pra outra.
+ */
+function tile(images) {
+  if (images.length >= MIN_TILES) return images.slice(0, MIN_TILES);
+  const out = [];
+  let offset = 0;
+  while (out.length < MIN_TILES) {
+    // Cada volta começa de um ponto diferente da lista, então a emenda
+    // nunca cai na mesma capa que acabou de entrar.
+    for (let i = 0; i < images.length && out.length < MIN_TILES; i++) {
+      out.push(images[(i + offset) % images.length]);
+    }
+    offset += Math.max(1, Math.floor(images.length / 2));
+  }
+  return out;
+}
+
+function build(root, images) {
+  const tiles = tile(images);
+  const stage = document.createElement('div');
+  stage.className = 'marquee-stage';
+
+  for (let c = 0; c < COLUMNS; c++) {
+    const col = document.createElement('div');
+    col.className = 'marquee-col';
+    // Round-robin em vez de fatiar em blocos: espalha capas parecidas
+    // (mesmo artista, cores próximas) entre as colunas.
+    for (let i = c; i < tiles.length; i += COLUMNS) {
+      const img = document.createElement('img');
+      img.src = tiles[i];
+      img.alt = '';
+      // Nada de loading="lazy": dentro de um container rotacionado e com
+      // overflow hidden o browser calcula a interseção pela posição já
+      // transformada e nunca dispara o carregamento.
+      img.fetchPriority = 'low';
+      img.decoding = 'async';
+      img.draggable = false;
+      col.appendChild(img);
+    }
+    stage.appendChild(col);
+  }
+
+  root.replaceChildren(stage);
+  root.hidden = false;
+}
+
+const root = document.querySelector('.marquee');
+const legenda = document.getElementById('legenda');
+
+try {
+  const r = await fetch(SRC, { cache: 'no-cache' });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  const data = await r.json();
+  const images = (data.track_art ?? []).filter(Boolean);
+  const n = (data.top_tracks ?? []).length;
+
+  if (images.length) {
+    build(root, images);
+    // A janela de 7 dias pode ter menos de 20 faixas distintas, ainda mais
+    // enquanto o histórico está enchendo. Melhor dizer o número real.
+    legenda.textContent = n === 1
+      ? 'a única música que toquei nos últimos 7 dias'
+      : `as ${n} músicas que mais toquei nos últimos 7 dias`;
+  } else {
+    legenda.textContent = 'ainda sem dados — o coletor roda a cada 30 minutos';
+  }
+} catch (e) {
+  legenda.textContent = 'não consegui carregar o que ando ouvindo agora';
+  console.warn('carrossel:', e);
+}
+</script>
+</body>
+</html>
