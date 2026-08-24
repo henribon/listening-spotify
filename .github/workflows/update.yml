@@ -2,9 +2,9 @@ name: Atualiza dados do Spotify
 
 on:
   schedule:
-    # A cada 30 min. O endpoint recently-played guarda as ultimas 50 faixas,
-    # o que cobre ~2h30 de escuta - sobra folga pros atrasos do cron do Actions.
-    - cron: '*/30 * * * *'
+    # Segunda-feira, 12:00 UTC (9h em Brasilia). Semanal basta: /me/top ja
+    # devolve o ranking pronto, nao ha historico pra acumular.
+    - cron: '0 12 * * 1'
   workflow_dispatch:
 
 # Um job por vez: duas execucoes em paralelo dariam conflito no push.

@@ -19,7 +19,9 @@ const REDIRECT_URI = `http://127.0.0.1:${PORT}/callback`;
 // Spotify exige 127.0.0.1 explicito: "localhost" foi descontinuado como
 // redirect URI. Tem que bater byte a byte com o que esta no dashboard.
 
-const SCOPES = ['user-read-recently-played', 'user-read-currently-playing'].join(' ');
+// /me/top/tracks exige user-top-read. Se voce ja gerou um refresh token
+// antes deste scope existir aqui, ele nao serve - tem que gerar de novo.
+const SCOPES = ['user-top-read'].join(' ');
 
 if (!CLIENT_ID || !CLIENT_SECRET) {
   console.error('Faltou SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET no ambiente.');

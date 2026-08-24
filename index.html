@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ouvindo — bonbap</title>
-<meta name="description" content="As 20 músicas que mais ouvi nos últimos 7 dias.">
+<meta name="description" content="As músicas que mais ouvi no Spotify nas últimas semanas.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
 <link rel="preconnect" href="https://i.scdn.co" crossorigin>
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="ouvindo — bonbap">
-<meta property="og:description" content="As 20 músicas que mais ouvi nos últimos 7 dias.">
+<meta property="og:description" content="As músicas que mais ouvi no Spotify nas últimas semanas.">
 <meta property="og:url" content="https://bonbap.com.br/listening-spotify/">
 
 <style>
@@ -30,8 +30,8 @@
   --bg: #ffffff;
   --fg: #16161a;
   --muted: #6b6b73;
+  --line: #e6e6e9;
   --hover: #f6f6f7;
-  --scrim: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,152 +39,36 @@
     --bg: #0d0d0f;
     --fg: #ededf0;
     --muted: #8a8a93;
+    --line: #232327;
     --hover: #151518;
-    --scrim: 13, 13, 15;
   }
 }
 
 * { box-sizing: border-box; }
 
-html, body { height: 100%; }
-
 body {
   margin: 0;
+  padding: 4rem 0;
+  min-height: 100vh;
   background: var(--bg);
   color: var(--fg);
   font: 400 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden; /* o carrossel é a página inteira, não há o que rolar */
 }
 
-/* ----------------------------------------------------------- carrossel --- */
-
-/*
- * Um quadrado bem maior que a tela, girado em isometria (rotateX + rotateZ).
- * Depois da rotação um quadrado de lado S vira um losango de S√2 de largura
- * por S de altura, então sobra imagem por todos os lados e a tela mostra só
- * uma fatia do meio.
- */
-.marquee {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.marquee[hidden] { display: none; }
-
-.marquee-stage {
-  /*
-   * O losango só cobre os cantos da tela se o lado do quadrado for pelo
-   * menos largura/√2 + altura. 71vw é largura/√2, daí o calc. Sem isso
-   * sobram triângulos de fundo vazio nos quatro cantos.
-   *
-   * As 8rem extras são a folga da deriva: as colunas andam ±3rem e sem
-   * isso a ponta delas descobre a borda no meio da animação.
-   */
-  --size: max(56rem, calc(71vw + 100vh + 8rem));
-  --gap: clamp(0.6rem, 1.4vw, 1.25rem);
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: var(--size);
-  height: var(--size);
-  /* Centraliza por margem, deixando o slot do transform só pra rotação. */
-  margin: calc(var(--size) / -2) 0 0 calc(var(--size) / -2);
-
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--gap);
-
-  transform: rotateX(50deg) rotateZ(45deg);
-}
-
-.marquee-col {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
-  will-change: transform;
-}
-
-/*
- * Colunas alternadas derivam em sentidos opostos. Os períodos (13s e 19s)
- * não são múltiplos um do outro, então o conjunto demora muito a repetir
- * a mesma configuração.
- */
-.marquee-col:nth-child(odd)  { animation: drift-down 13s ease-in-out infinite alternate; }
-.marquee-col:nth-child(even) { animation: drift-up   19s ease-in-out infinite alternate; }
-
-@keyframes drift-down {
-  from { transform: translateY(-3rem); }
-  to   { transform: translateY(3rem); }
-}
-@keyframes drift-up {
-  from { transform: translateY(3rem); }
-  to   { transform: translateY(-3rem); }
-}
-
-.marquee img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1;       /* capa de álbum é quadrada */
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background: var(--hover);
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-col { animation: none; }
-}
-
-/* -------------------------------------------------------------- legenda --- */
-
-.overlay {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 1.25rem;
-}
-
-/*
- * O véu que segura a legibilidade do texto. Fica num pseudo-elemento fixo,
- * cobrindo a viewport toda: se o gradiente morasse na .overlay ele pararia
- * na largura da coluna de texto e deixaria duas emendas verticais duras.
- */
-.overlay::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: radial-gradient(
-    ellipse 68% 52% at 50% 50%,
-    rgba(var(--scrim), 0.94) 0%,
-    rgba(var(--scrim), 0.78) 45%,
-    rgba(var(--scrim), 0) 100%
-  );
-}
-
-.overlay-inner {
-  width: 100%;
-  max-width: 34rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.4rem;
+/* O texto fica na coluna estreita; o carrossel corre a largura toda. */
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
   color: var(--muted);
   text-decoration: none;
   font-size: 0.8125rem;
-  margin-bottom: 0.75rem;
 }
 .back:hover, .back:focus-visible { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; }
 
@@ -194,102 +78,194 @@ h1 {
   font-size: clamp(2.75rem, 11vw, 3.5rem);
   line-height: 1;
   letter-spacing: -0.02em;
-  margin: 0;
+  margin: 0 0 0.75rem;
 }
 
 .who { margin: 0; font-size: 0.875rem; color: var(--muted); }
-.who strong { color: var(--fg); font-weight: 500; }
+
+/* ----------------------------------------------------------- carrossel --- */
+
+.carousel {
+  margin-top: 3rem;
+  overflow: hidden;
+  /* Some nas pontas em vez de cortar seco na borda da tela. */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+
+.carousel[hidden] { display: none; }
+
+/*
+ * A fita tem duas cópias idênticas da lista lado a lado. Deslizar até -50%
+ * move exatamente uma cópia, e nesse instante o que está na tela é igual ao
+ * quadro inicial — daí o loop não tem emenda visível.
+ */
+.track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  margin: 0;
+  padding: 0 1rem;
+  list-style: none;
+  animation: slide var(--dur, 90s) linear infinite;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Pausa pra dar tempo de mirar e clicar. */
+.carousel:hover .track,
+.carousel:focus-within .track { animation-play-state: paused; }
+
+.item { width: clamp(8.5rem, 20vw, 11rem); flex: none; }
+
+.item a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;          /* capa de álbum é quadrada */
+  object-fit: cover;
+  border-radius: 0.625rem;
+  background: var(--hover);
+  border: 1px solid var(--line);
+  transition: transform 0.18s ease;
+  -webkit-user-drag: none;
+}
+
+.item a:hover img,
+.item a:focus-visible img { transform: scale(1.04); }
+
+.item .name {
+  display: block;
+  margin-top: 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  /* Nome de faixa é imprevisível: corta em uma linha só pra não desalinhar
+     a altura dos cartões vizinhos. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item .artist {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item a:hover .name { text-decoration: underline; text-underline-offset: 3px; }
+
+/*
+ * Sem animação, a fita vira uma faixa rolável na mão. A segunda cópia sai
+ * de cena: ela só existe pra emendar o loop.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .carousel { overflow-x: auto; }
+  .track { animation: none; }
+  .track [aria-hidden="true"] { display: none; }
+}
 
 :focus-visible { outline: 2px solid var(--muted); outline-offset: 3px; }
 </style>
 </head>
 <body>
 
-<!-- Começa escondido: o script só revela depois de montar as capas, pra não
-     deixar um retângulo vazio se a requisição falhar. -->
-<section class="marquee" aria-hidden="true" hidden></section>
-
-<div class="overlay">
-  <div class="overlay-inner">
-    <a class="back" href="https://bonbap.com.br/">&larr; bonbap</a>
-    <h1>ouvindo</h1>
-    <p class="who" id="legenda">as 20 músicas que mais toquei nos últimos 7 dias</p>
-  </div>
+<div class="wrap">
+  <a class="back" href="https://bonbap.com.br/">&larr; bonbap</a>
+  <h1>ouvindo</h1>
+  <p class="who" id="legenda">Carregando…</p>
 </div>
+
+<section class="carousel" aria-label="Músicas que mais ouvi no Spotify" hidden>
+  <ul class="track" id="track"></ul>
+</section>
 
 <script type="module">
 const SRC = 'data/listening.json';
+const VELOCIDADE = 45; // pixels por segundo
 
-const COLUMNS = 6;
-const MIN_TILES = 36; // 6 por coluna: o bastante pra estourar a altura do palco
-
-/**
- * Repete as capas até dar MIN_TILES sem deixar a mesma imagem colada nela
- * mesma na emenda de uma volta pra outra.
- */
-function tile(images) {
-  if (images.length >= MIN_TILES) return images.slice(0, MIN_TILES);
-  const out = [];
-  let offset = 0;
-  while (out.length < MIN_TILES) {
-    // Cada volta começa de um ponto diferente da lista, então a emenda
-    // nunca cai na mesma capa que acabou de entrar.
-    for (let i = 0; i < images.length && out.length < MIN_TILES; i++) {
-      out.push(images[(i + offset) % images.length]);
-    }
-    offset += Math.max(1, Math.floor(images.length / 2));
-  }
-  return out;
-}
-
-function build(root, images) {
-  const tiles = tile(images);
-  const stage = document.createElement('div');
-  stage.className = 'marquee-stage';
-
-  for (let c = 0; c < COLUMNS; c++) {
-    const col = document.createElement('div');
-    col.className = 'marquee-col';
-    // Round-robin em vez de fatiar em blocos: espalha capas parecidas
-    // (mesmo artista, cores próximas) entre as colunas.
-    for (let i = c; i < tiles.length; i += COLUMNS) {
-      const img = document.createElement('img');
-      img.src = tiles[i];
-      img.alt = '';
-      // Nada de loading="lazy": dentro de um container rotacionado e com
-      // overflow hidden o browser calcula a interseção pela posição já
-      // transformada e nunca dispara o carregamento.
-      img.fetchPriority = 'low';
-      img.decoding = 'async';
-      img.draggable = false;
-      col.appendChild(img);
-    }
-    stage.appendChild(col);
-  }
-
-  root.replaceChildren(stage);
-  root.hidden = false;
-}
-
-const root = document.querySelector('.marquee');
+const carousel = document.querySelector('.carousel');
+const track = document.getElementById('track');
 const legenda = document.getElementById('legenda');
+
+function item(t, clone) {
+  const li = document.createElement('li');
+  li.className = 'item';
+  // A segunda cópia é decorativa: escondê-la do leitor de tela e do foco
+  // evita que a mesma faixa apareça duas vezes na navegação por teclado.
+  if (clone) {
+    li.setAttribute('aria-hidden', 'true');
+  }
+
+  const a = document.createElement('a');
+  a.href = t.url ?? '#';
+  a.target = '_blank';
+  a.rel = 'noopener';
+  if (clone) a.tabIndex = -1;
+
+  const img = document.createElement('img');
+  img.src = t.image ?? '';
+  img.alt = t.image ? `Capa de ${t.album ?? t.name}` : '';
+  img.decoding = 'async';
+  img.draggable = false;
+
+  const nome = document.createElement('span');
+  nome.className = 'name';
+  nome.textContent = t.name;
+
+  const artista = document.createElement('span');
+  artista.className = 'artist';
+  artista.textContent = t.artist;
+
+  a.append(img, nome, artista);
+  li.append(a);
+  return li;
+}
+
+function build(tracks) {
+  // Duas cópias: a animação desliza -50%, que é exatamente uma delas.
+  const items = [
+    ...tracks.map((t) => item(t, false)),
+    ...tracks.map((t) => item(t, true)),
+  ];
+  track.replaceChildren(...items);
+  carousel.hidden = false;
+
+  // Duração proporcional à largura, pra velocidade não mudar conforme o
+  // número de faixas ou o tamanho da tela.
+  //
+  // Síncrono de propósito: ler scrollWidth já força o layout, e a largura
+  // dos itens vem do CSS, não das imagens. Num requestAnimationFrame isto
+  // não rodaria enquanto a aba estivesse em segundo plano, e o carrossel
+  // ficaria preso na duração de fallback.
+  const umaCopia = track.scrollWidth / 2;
+  if (umaCopia > 0) {
+    track.style.setProperty('--dur', `${Math.round(umaCopia / VELOCIDADE)}s`);
+  }
+}
 
 try {
   const r = await fetch(SRC, { cache: 'no-cache' });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   const data = await r.json();
-  const images = (data.track_art ?? []).filter(Boolean);
-  const n = (data.top_tracks ?? []).length;
+  const tracks = (data.tracks ?? []).filter((t) => t.image);
 
-  if (images.length) {
-    build(root, images);
-    // A janela de 7 dias pode ter menos de 20 faixas distintas, ainda mais
-    // enquanto o histórico está enchendo. Melhor dizer o número real.
-    legenda.textContent = n === 1
-      ? 'a única música que toquei nos últimos 7 dias'
-      : `as ${n} músicas que mais toquei nos últimos 7 dias`;
+  if (tracks.length) {
+    build(tracks);
+    legenda.textContent =
+      `as ${tracks.length} músicas que mais ouvi ${data.range_label ?? 'nas últimas semanas'}`;
   } else {
-    legenda.textContent = 'ainda sem dados — o coletor roda a cada 30 minutos';
+    legenda.textContent = 'ainda sem dados — a coleta roda toda segunda-feira';
   }
 } catch (e) {
   legenda.textContent = 'não consegui carregar o que ando ouvindo agora';

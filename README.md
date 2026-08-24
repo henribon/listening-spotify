@@ -1,48 +1,46 @@
 # listening-spotify
 
-Uma página com um carrossel 3D das capas das **20 músicas** que mais toquei no
-Spotify nos últimos 7 dias. As capas se movem sozinhas. Sem backend, sem
-servidor, sem build.
+Uma página com um carrossel das capas das 20 músicas que mais ouvi no Spotify.
+As capas correm sozinhas, param quando o mouse chega perto e abrem a faixa no
+Spotify quando clicadas. Sem backend, sem servidor, sem build.
 
 Publicado em <https://bonbap.com.br/listening-spotify/>.
 
 ## Como funciona
 
-Um GitHub Action roda a cada 30 minutos, puxa `/me/player/recently-played`,
-anexa as faixas novas num histórico versionado e recalcula o ranking da janela
-de 7 dias. O resultado vai pra `data/listening.json`, servido pelo GitHub
-Pages, e a página monta o carrossel a partir dele.
+Um GitHub Action roda toda segunda-feira, chama `/me/top/tracks` e grava
+`data/listening.json`. O GitHub Pages serve o arquivo, e a página monta o
+carrossel a partir dele.
 
-**Por que acumular em vez de usar `/me/top`:** o endpoint `/me/top` só aceita
-janelas de ~4 semanas, ~6 meses ou "todo o sempre" — não existe opção de 1
-semana. Contando os plays de `recently-played` a janela vira o que a gente
-quiser, e as contagens passam a ser plays reais em vez de um score opaco da
-Spotify.
+**A janela é de ~4 semanas, não de 1 semana.** O `/me/top` só aceita
+`short_term` (~4 semanas), `medium_term` (~6 meses) e `long_term`. Não existe
+opção de 7 dias, e não existe endpoint de top álbuns. O texto da página diz
+"nas últimas 4 semanas" justamente por isso.
+
+Esse endpoint também não devolve contagem de plays — só a ordem, por um
+critério que a Spotify não detalha.
 
 ```
 index.html          # a página do carrossel (CSS e JS embutidos)
 scripts/auth.mjs    # roda 1x na sua máquina, gera o refresh token
-scripts/update.mjs  # roda no Action, coleta e agrega
-data/history.json   # plays brutos, 14 dias
+scripts/update.mjs  # roda no Action, busca o ranking
 data/listening.json # o que a página consome
 ```
 
 ### O carrossel
 
-É um porte em CSS puro do componente React/Tailwind de marquee 3D — mesmo
-efeito, zero dependência, roda no Pages do jeito que está.
+A fita tem duas cópias idênticas da lista lado a lado, e a animação desliza
+até `-50%` — exatamente uma cópia. No instante em que termina, o que está na
+tela é igual ao quadro inicial, então o loop não tem emenda.
 
-Um quadrado grande girado em isometria (`rotateX(50deg) rotateZ(45deg)`) vira
-um losango, e a tela mostra só uma fatia dele. Pra não sobrar canto vazio o
-lado do quadrado tem que ser pelo menos `largura/√2 + altura` — daí o
-`calc(71vw + 100vh)` no CSS. As colunas derivam pra cima e pra baixo em
-períodos que não são múltiplos (13s e 19s), então o conjunto demora muito a
-repetir a mesma configuração.
+A duração é calculada em JS a partir da largura real, pra velocidade ficar
+constante (45 px/s) independente de quantas faixas ou do tamanho da tela. O
+cálculo é síncrono de propósito: dentro de um `requestAnimationFrame` ele não
+rodaria com a aba em segundo plano.
 
-Faixas do mesmo disco dividem a mesma capa, então `track_art` vem deduplicado:
-20 músicas de um álbum só viravam 20 quadrados idênticos girando na tela. Se
-sobrarem menos capas que os 36 quadros da grade, elas se repetem — a repetição
-é distribuída pra que a mesma capa nunca fique colada nela mesma.
+A segunda cópia é `aria-hidden` e fora da ordem de foco, senão cada faixa
+apareceria duas vezes na navegação por teclado. Com `prefers-reduced-motion`
+a animação some, a segunda cópia é escondida e a faixa vira rolável na mão.
 
 ## Setup
 
@@ -63,28 +61,37 @@ faz: você é o único, e não precisa pedir extensão de quota.
 
 ### 2. Pega o refresh token (uma vez só)
 
-Precisa de Node 20+.
+Precisa de Node 20+. Com um arquivo `secrets.env` contendo o Client ID e o
+Secret (qualquer `*.env` é ignorado pelo git):
 
 ```bash
-SPOTIFY_CLIENT_ID=seu_id SPOTIFY_CLIENT_SECRET=seu_secret node scripts/auth.mjs
+node --env-file=secrets.env scripts/auth.mjs
 ```
 
 Abre a URL que aparecer, autoriza, e o refresh token sai no terminal. Ele não
 expira.
 
+> **Trocou de endpoint?** O scope pedido aqui é `user-top-read`. Um refresh
+> token gerado antes disso não serve, e o Action falha com 403. Se acontecer,
+> roda este script de novo e atualiza o secret.
+
 ### 3. Guarda os secrets no repositório
 
-Em **Settings → Secrets and variables → Actions**, cria os três:
+```bash
+gh secret set SPOTIFY_CLIENT_ID
+```
 
-- `SPOTIFY_CLIENT_ID`
-- `SPOTIFY_CLIENT_SECRET`
-- `SPOTIFY_REFRESH_TOKEN`
+O prompt pede o valor. Repete pros outros dois (`SPOTIFY_CLIENT_SECRET`,
+`SPOTIFY_REFRESH_TOKEN`). Ou clicando: **Settings → Secrets and variables →
+Actions → New repository secret**.
 
-### 4. Liga o Pages e o Action
+Depois que os três estiverem lá, apaga o `secrets.env`.
 
-- **Settings → Pages** → Source: *Deploy from a branch* → `main` / `/ (root)`.
-- **Actions → Atualiza dados do Spotify → Run workflow** pra rodar a primeira
-  coleta na hora, sem esperar o cron.
+### 4. Liga o Pages e roda a primeira coleta
+
+- **Settings → Pages** → Source: *Deploy from a branch* → `master` / `/ (root)`.
+- **Actions → Atualiza dados do Spotify → Run workflow**, pra não esperar até
+  segunda.
 
 Como o CNAME `bonbap.com.br` está no repo de user site (`henribon.github.io`),
 este project site é servido em `bonbap.com.br/listening-spotify/` — mesmo
@@ -99,7 +106,7 @@ No `index.html` do site, dentro do `<nav>`:
 <a class="link" href="/listening-spotify/">
   <span>
     <span class="name">Ouvindo</span>
-    <span class="desc">As músicas que mais toquei nos últimos 7 dias</span>
+    <span class="desc">As músicas que mais tenho escutado</span>
   </span>
   <span class="go" aria-hidden="true">&rarr;</span>
 </a>
@@ -107,17 +114,10 @@ No `index.html` do site, dentro do `<nav>`:
 
 ## Notas
 
-- **A primeira semana fica magra.** O histórico se acumula a partir do momento
-  em que o Action começa a rodar; até completar 7 dias a legenda mostra o
-  número real de faixas, que pode ser menor que 20.
-- `recently-played` só devolve as últimas 50 faixas e só conta reprodução acima
-  de ~30 s. Rodando de 30 em 30 min sobra folga (50 faixas ≈ 2h30 de escuta),
-  mas se o Action ficar dias parado, perde o que passar disso.
-- Podcasts e arquivos locais não entram — a API não os reporta nesse endpoint.
-- O JSON também traz `top_artists` e `top_albums` (10 cada), que a página do
-  carrossel não usa. Ficam ali caso você queira uma listagem depois.
-- Ajustes ficam no topo do `scripts/update.mjs`: `WINDOW_DAYS` (janela),
-  `RETAIN_DAYS` (histórico bruto), `TRACK_N` (músicas do carrossel) e `TOP_N`
-  (demais rankings). No `index.html`, `COLUMNS` e `MIN_TILES` controlam a
-  densidade da grade — se mudar `COLUMNS`, `MIN_TILES` precisa ser pelo menos
-  `COLUMNS²` pra coluna nenhuma ficar curta demais e descobrir a borda.
+- Podcasts não entram — `/me/top/tracks` só devolve música.
+- Faixas do mesmo disco dividem a mesma capa, então pode aparecer a mesma
+  imagem mais de uma vez no carrossel. Cada uma linka pra sua própria faixa.
+- Ajustes ficam no topo do `scripts/update.mjs`: `RANGE` (janela), `LIMIT`
+  (quantas faixas) e `RANGE_LABEL` (o texto da legenda — muda junto com
+  `RANGE`, senão a página mente). No `index.html`, `VELOCIDADE` controla os
+  px/s do carrossel.
