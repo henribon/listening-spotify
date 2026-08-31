@@ -1,14 +1,35 @@
 {
-  "generated_at": "2026-08-24T20:48:57.194Z",
+  "generated_at": "2026-08-31T18:55:22.456Z",
   "range": "short_term",
   "range_label": "nas últimas 4 semanas",
   "tracks": [
     {
-      "name": "4EVA",
-      "artist": "KAYTRAMINÉ, Aminé, KAYTRANADA, Pharrell Williams",
-      "album": "KAYTRAMINÉ",
-      "image": "https://i.scdn.co/image/ab67616d00001e0259a76b58fa95e166986866e7",
-      "url": "https://open.spotify.com/track/2S4HEo4LCcIbU1AcEQ4RQZ"
+      "name": "Ginga",
+      "artist": "Robson Jorge, Lincoln Olivetti",
+      "album": "Robson Jorge e Lincoln Olivetti",
+      "image": "https://i.scdn.co/image/ab67616d00001e023bcd1849d72fd6d81bd69142",
+      "url": "https://open.spotify.com/track/2KDF5lrsQNBN0a89SwkwDg"
+    },
+    {
+      "name": "Raton",
+      "artist": "Robson Jorge, Lincoln Olivetti",
+      "album": "Robson Jorge e Lincoln Olivetti",
+      "image": "https://i.scdn.co/image/ab67616d00001e023bcd1849d72fd6d81bd69142",
+      "url": "https://open.spotify.com/track/5yPqoxSrQWONW0yBYOXrgi"
+    },
+    {
+      "name": "From U. S. Of Piauí",
+      "artist": "Luiz Gonzaga",
+      "album": "Aquilo Bom!",
+      "image": "https://i.scdn.co/image/ab67616d00001e0241436672034df08c16ab82e7",
+      "url": "https://open.spotify.com/track/3rjyGiPpGYddhLVG8jhBXF"
+    },
+    {
+      "name": "QUE LOUCURA",
+      "artist": "DJ EXE, CACAU CHUU",
+      "album": "QUE LOUCURA",
+      "image": "https://i.scdn.co/image/ab67616d00001e0249248c0bd4b98457fce00a1a",
+      "url": "https://open.spotify.com/track/2J0Nuqw3GbSPRRrTO7P6V8"
     },
     {
       "name": "La Vida Tombola",
@@ -18,11 +39,11 @@
       "url": "https://open.spotify.com/track/3U34tMYhMbr6tBWZdCUp6f"
     },
     {
-      "name": "From U. S. Of Piauí",
-      "artist": "Luiz Gonzaga",
-      "album": "Aquilo Bom!",
-      "image": "https://i.scdn.co/image/ab67616d00001e0241436672034df08c16ab82e7",
-      "url": "https://open.spotify.com/track/3rjyGiPpGYddhLVG8jhBXF"
+      "name": "Dilema",
+      "artist": "Emílio Santiago",
+      "album": "Aquarela Brasileira 7",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c8505f126c5a320a6c3ad8a1",
+      "url": "https://open.spotify.com/track/7MfDBnCpfBWlACAURU2dFP"
     },
     {
       "name": "Mingau de Açai",
@@ -39,18 +60,25 @@
       "url": "https://open.spotify.com/track/4iZxeyibg6w4EFCOoAQ6Eh"
     },
     {
-      "name": "Bellator",
-      "artist": "Skepta",
-      "album": "All In",
-      "image": "https://i.scdn.co/image/ab67616d00001e0243cad2449ee0004ecd189af4",
-      "url": "https://open.spotify.com/track/0B0Y6slHV9SzSXNOareNTS"
-    },
-    {
       "name": "Reloginho",
       "artist": "Nêgo Jhá",
       "album": "Reloginho",
       "image": "https://i.scdn.co/image/ab67616d00001e025ada647da9fe6bb4a12d5892",
       "url": "https://open.spotify.com/track/0rj1IT0oVeN9fomV6LjQye"
+    },
+    {
+      "name": "Duvido - Ao Vivo",
+      "artist": "Turma do Pagode, Ferrugem, Mumuzinho",
+      "album": "Mixturadin 3 (Ao Vivo)",
+      "image": "https://i.scdn.co/image/ab67616d00001e026f2f9e9fa139623cdd828c24",
+      "url": "https://open.spotify.com/track/14KMQgJYGx0WMwmSLRnlHd"
+    },
+    {
+      "name": "Just Dance",
+      "artist": "Lady Gaga, Colby O'Donis",
+      "album": "The Fame",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e691217483df8798445c82e2",
+      "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
     },
     {
       "name": "U - Informe",
@@ -60,18 +88,18 @@
       "url": "https://open.spotify.com/track/2ALa0vqA64VJ6LTijDbGuP"
     },
     {
-      "name": "QUE LOUCURA",
-      "artist": "DJ EXE, CACAU CHUU",
-      "album": "QUE LOUCURA",
-      "image": "https://i.scdn.co/image/ab67616d00001e0249248c0bd4b98457fce00a1a",
-      "url": "https://open.spotify.com/track/2J0Nuqw3GbSPRRrTO7P6V8"
+      "name": "SUTOMORE",
+      "artist": "browse Tito, lost tapes",
+      "album": "SUTOMORE",
+      "image": "https://i.scdn.co/image/ab67616d00001e026c3da73d36f699e6b095ebe5",
+      "url": "https://open.spotify.com/track/2lYQIRDaUqOFvRs57OGdwh"
     },
     {
-      "name": "Ginga",
-      "artist": "Robson Jorge, Lincoln Olivetti",
-      "album": "Robson Jorge e Lincoln Olivetti",
-      "image": "https://i.scdn.co/image/ab67616d00001e023bcd1849d72fd6d81bd69142",
-      "url": "https://open.spotify.com/track/2KDF5lrsQNBN0a89SwkwDg"
+      "name": "La Campanera",
+      "artist": "Aniceto Molina",
+      "album": "El Tigre Sabanero",
+      "image": "https://i.scdn.co/image/ab67616d00001e02433bdfec4809c169c54bdf05",
+      "url": "https://open.spotify.com/track/3GjAUJXV4U4nV9UejYXowU"
     },
     {
       "name": "Rosetta Tharpe",
@@ -109,39 +137,11 @@
       "url": "https://open.spotify.com/track/1AQxJtGlb8bqi1vNHL9CRR"
     },
     {
-      "name": "Fuzuê no Baile da China 2.0",
-      "artist": "DJ Ricardinho, DJ Jeffinho da China, FIRMA 21",
-      "album": "Fuzuê no Baile da China",
-      "image": "https://i.scdn.co/image/ab67616d00001e020a24b93d20d6a64b3b0f72c2",
-      "url": "https://open.spotify.com/track/2DcwHwTMjWhsqorROjH5tj"
-    },
-    {
       "name": "Falador Passa Mal",
       "artist": "Os Originais Do Samba",
       "album": "É Preciso Cantar",
       "image": "https://i.scdn.co/image/ab67616d00001e02737412b17d06dc42e1995ea1",
       "url": "https://open.spotify.com/track/2bKOB6DLw8inrQC8UmghQN"
-    },
-    {
-      "name": "SUTOMORE",
-      "artist": "browse Tito, lost tapes",
-      "album": "SUTOMORE",
-      "image": "https://i.scdn.co/image/ab67616d00001e026c3da73d36f699e6b095ebe5",
-      "url": "https://open.spotify.com/track/2lYQIRDaUqOFvRs57OGdwh"
-    },
-    {
-      "name": "Amantes da Foda",
-      "artist": "Mc Rodrigo do CN, DJ JOAO DA INESTAN",
-      "album": "Amantes da Foda",
-      "image": "https://i.scdn.co/image/ab67616d00001e024bd280000f1a406f999cb8b2",
-      "url": "https://open.spotify.com/track/4DhDNNhIDdduS6nZMbSMbs"
-    },
-    {
-      "name": "Eu Vou Te Hipnotizar",
-      "artist": "DJ Marlboro, Mc Mágico, Mulher Melão",
-      "album": "Trilogia Big Mix 2010 - Pancadão Mix",
-      "image": "https://i.scdn.co/image/ab67616d00001e02d2758b382fe9a99c3b5b3ec7",
-      "url": "https://open.spotify.com/track/5bjhcYDSfXqytQsyZ2e9hD"
     }
   ]
 }
