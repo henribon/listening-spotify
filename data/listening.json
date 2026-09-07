@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T18:55:22.456Z",
+  "generated_at": "2026-09-07T17:29:43.859Z",
   "range": "short_term",
   "range_label": "nas últimas 4 semanas",
   "tracks": [
@@ -18,11 +18,25 @@
       "url": "https://open.spotify.com/track/5yPqoxSrQWONW0yBYOXrgi"
     },
     {
-      "name": "From U. S. Of Piauí",
-      "artist": "Luiz Gonzaga",
-      "album": "Aquilo Bom!",
-      "image": "https://i.scdn.co/image/ab67616d00001e0241436672034df08c16ab82e7",
-      "url": "https://open.spotify.com/track/3rjyGiPpGYddhLVG8jhBXF"
+      "name": "U - Informe",
+      "artist": "Black Alien",
+      "album": "Babylon By Gus Vol. 1 - o Ano do Macaco",
+      "image": "https://i.scdn.co/image/ab67616d00001e022b1678cbc2c4ec91c6da1cf1",
+      "url": "https://open.spotify.com/track/2ALa0vqA64VJ6LTijDbGuP"
+    },
+    {
+      "name": "Japonesa",
+      "artist": "Seu Jorge",
+      "album": "Musica para Churrasco, Vol. 1",
+      "image": "https://i.scdn.co/image/ab67616d00001e02931e41642ebab615fdfce070",
+      "url": "https://open.spotify.com/track/4sb5rPCnaHVR7nCkfcCUIC"
+    },
+    {
+      "name": "DotA - Radio Edit",
+      "artist": "Basshunter",
+      "album": "LOL (2008 yellow bonus version/no videos_France)",
+      "image": "https://i.scdn.co/image/ab67616d00001e024699e8c0e35827c9249d1618",
+      "url": "https://open.spotify.com/track/6HjtZWIo0bh0KLD8Tq4ujR"
     },
     {
       "name": "QUE LOUCURA",
@@ -30,6 +44,13 @@
       "album": "QUE LOUCURA",
       "image": "https://i.scdn.co/image/ab67616d00001e0249248c0bd4b98457fce00a1a",
       "url": "https://open.spotify.com/track/2J0Nuqw3GbSPRRrTO7P6V8"
+    },
+    {
+      "name": "Preciso Urgentemente Falar Com Cassiano",
+      "artist": "Sandra Sá",
+      "album": "Sandra de Sá - 1982",
+      "image": "https://i.scdn.co/image/ab67616d00001e0207f88758617b62b932fd2850",
+      "url": "https://open.spotify.com/track/36l0ta3kavAa15dySyqCY0"
     },
     {
       "name": "La Vida Tombola",
@@ -46,6 +67,13 @@
       "url": "https://open.spotify.com/track/7MfDBnCpfBWlACAURU2dFP"
     },
     {
+      "name": "Duvido - Ao Vivo",
+      "artist": "Turma do Pagode, Ferrugem, Mumuzinho",
+      "album": "Mixturadin 3 (Ao Vivo)",
+      "image": "https://i.scdn.co/image/ab67616d00001e026f2f9e9fa139623cdd828c24",
+      "url": "https://open.spotify.com/track/14KMQgJYGx0WMwmSLRnlHd"
+    },
+    {
       "name": "Mingau de Açai",
       "artist": "Mestre Cupijó e Seu Ritmo",
       "album": "Siriá (Analog Africa No. 16)",
@@ -60,6 +88,20 @@
       "url": "https://open.spotify.com/track/4iZxeyibg6w4EFCOoAQ6Eh"
     },
     {
+      "name": "Mister Niterói",
+      "artist": "Black Alien",
+      "album": "Babylon By Gus Vol. 1 - o Ano do Macaco",
+      "image": "https://i.scdn.co/image/ab67616d00001e022b1678cbc2c4ec91c6da1cf1",
+      "url": "https://open.spotify.com/track/6eQjwvQmfY4vBs4c9IKiuW"
+    },
+    {
+      "name": "Dedicada a ela",
+      "artist": "Arthur Verocai",
+      "album": "Arthur Verocai",
+      "image": "https://i.scdn.co/image/ab67616d00001e02816dff6b953279497b0e7732",
+      "url": "https://open.spotify.com/track/0eVnhQNFTRZXOIhHZNLX85"
+    },
+    {
       "name": "Reloginho",
       "artist": "Nêgo Jhá",
       "album": "Reloginho",
@@ -67,74 +109,25 @@
       "url": "https://open.spotify.com/track/0rj1IT0oVeN9fomV6LjQye"
     },
     {
-      "name": "Duvido - Ao Vivo",
-      "artist": "Turma do Pagode, Ferrugem, Mumuzinho",
-      "album": "Mixturadin 3 (Ao Vivo)",
-      "image": "https://i.scdn.co/image/ab67616d00001e026f2f9e9fa139623cdd828c24",
-      "url": "https://open.spotify.com/track/14KMQgJYGx0WMwmSLRnlHd"
+      "name": "One (Your Name) (feat. Pharrell Williams) - Radio Edit",
+      "artist": "Swedish House Mafia, Pharrell Williams",
+      "album": "One (Your Name) (feat. Pharrell Williams)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02a79d98e61b1751c5bd2f70c9",
+      "url": "https://open.spotify.com/track/1ULtmkZQia2op5KeeNHCCs"
     },
     {
-      "name": "Just Dance",
-      "artist": "Lady Gaga, Colby O'Donis",
-      "album": "The Fame",
-      "image": "https://i.scdn.co/image/ab67616d00001e02e691217483df8798445c82e2",
-      "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
+      "name": "Sinto Sua Falta / Namoro Escondido / 12 Horas - Ao Vivo",
+      "artist": "Di Propósito, Yan, Vitor Limma",
+      "album": "Encontrin 3 (Ao Vivo)",
+      "image": "https://i.scdn.co/image/ab67616d00001e0285c5c6cd25df50301fc7783b",
+      "url": "https://open.spotify.com/track/1Umgv8Mx8x4i4NyM1w5ZtS"
     },
     {
-      "name": "U - Informe",
-      "artist": "Black Alien",
-      "album": "Babylon By Gus Vol. 1 - o Ano do Macaco",
-      "image": "https://i.scdn.co/image/ab67616d00001e022b1678cbc2c4ec91c6da1cf1",
-      "url": "https://open.spotify.com/track/2ALa0vqA64VJ6LTijDbGuP"
-    },
-    {
-      "name": "SUTOMORE",
-      "artist": "browse Tito, lost tapes",
-      "album": "SUTOMORE",
-      "image": "https://i.scdn.co/image/ab67616d00001e026c3da73d36f699e6b095ebe5",
-      "url": "https://open.spotify.com/track/2lYQIRDaUqOFvRs57OGdwh"
-    },
-    {
-      "name": "La Campanera",
-      "artist": "Aniceto Molina",
-      "album": "El Tigre Sabanero",
-      "image": "https://i.scdn.co/image/ab67616d00001e02433bdfec4809c169c54bdf05",
-      "url": "https://open.spotify.com/track/3GjAUJXV4U4nV9UejYXowU"
-    },
-    {
-      "name": "Rosetta Tharpe",
-      "artist": "Nill, Ryam Beatz",
-      "album": "Good Smell, Vol. 2",
-      "image": "https://i.scdn.co/image/ab67616d00001e02f35cab9280102a49d5a2011e",
-      "url": "https://open.spotify.com/track/3f2uHape2pYafBuH6gmidF"
-    },
-    {
-      "name": "Children",
-      "artist": "Robert Miles",
-      "album": "Children (Dance Vault Mixes)",
-      "image": "https://i.scdn.co/image/ab67616d00001e0285a2da83b5b340365ae7d8cd",
-      "url": "https://open.spotify.com/track/4wtR6HB3XekEengMX17cpc"
-    },
-    {
-      "name": "Punch in the Face",
-      "artist": "Jme",
-      "album": "Famous?",
-      "image": "https://i.scdn.co/image/ab67616d00001e02fbf1db6861560bd5ffbf8930",
-      "url": "https://open.spotify.com/track/4zCPqDjuoNJuhkGU3dYPxS"
-    },
-    {
-      "name": "Set Me Free - Radio Edit",
-      "artist": "House Boulevard, Cassioplay, G. Martini, Samara Iacono, Dj Tom Hopkins, Naraine W.",
-      "album": "Set Me Free",
-      "image": "https://i.scdn.co/image/ab67616d00001e02f8cb54f3c51b55724089786e",
-      "url": "https://open.spotify.com/track/6WL2fauODFhHs31OJBVM3m"
-    },
-    {
-      "name": "One - Radio Edit",
-      "artist": "Swedish House Mafia",
-      "album": "Until Now",
-      "image": "https://i.scdn.co/image/ab67616d00001e02544023aa98872d4deb347465",
-      "url": "https://open.spotify.com/track/1AQxJtGlb8bqi1vNHL9CRR"
+      "name": "A Flor e o Espinho",
+      "artist": "Nelson Cavaquinho",
+      "album": "Série Documento - Nelson Cavaquinho",
+      "image": "https://i.scdn.co/image/ab67616d00001e02db63a8d00abe60a80e8f15af",
+      "url": "https://open.spotify.com/track/2SnJmKJAp8fPJ9WV5eqs6g"
     },
     {
       "name": "Falador Passa Mal",
@@ -142,6 +135,13 @@
       "album": "É Preciso Cantar",
       "image": "https://i.scdn.co/image/ab67616d00001e02737412b17d06dc42e1995ea1",
       "url": "https://open.spotify.com/track/2bKOB6DLw8inrQC8UmghQN"
+    },
+    {
+      "name": "Despedida",
+      "artist": "Mestre Cupijó e Seu Ritmo",
+      "album": "Jambú E Os Míticos Sons Da Amazônia (Analog Africa No. 28)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02ba15c7976c7071766df335c9",
+      "url": "https://open.spotify.com/track/2kx8JGv0XBJQycGGcVl8N5"
     }
   ]
 }
