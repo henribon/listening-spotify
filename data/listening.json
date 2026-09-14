@@ -1,15 +1,8 @@
 {
-  "generated_at": "2026-09-07T17:29:43.859Z",
+  "generated_at": "2026-09-14T17:53:08.725Z",
   "range": "short_term",
   "range_label": "nas últimas 4 semanas",
   "tracks": [
-    {
-      "name": "Ginga",
-      "artist": "Robson Jorge, Lincoln Olivetti",
-      "album": "Robson Jorge e Lincoln Olivetti",
-      "image": "https://i.scdn.co/image/ab67616d00001e023bcd1849d72fd6d81bd69142",
-      "url": "https://open.spotify.com/track/2KDF5lrsQNBN0a89SwkwDg"
-    },
     {
       "name": "Raton",
       "artist": "Robson Jorge, Lincoln Olivetti",
@@ -18,11 +11,11 @@
       "url": "https://open.spotify.com/track/5yPqoxSrQWONW0yBYOXrgi"
     },
     {
-      "name": "U - Informe",
-      "artist": "Black Alien",
-      "album": "Babylon By Gus Vol. 1 - o Ano do Macaco",
-      "image": "https://i.scdn.co/image/ab67616d00001e022b1678cbc2c4ec91c6da1cf1",
-      "url": "https://open.spotify.com/track/2ALa0vqA64VJ6LTijDbGuP"
+      "name": "QUE LOUCURA",
+      "artist": "DJ EXE, CACAU CHUU",
+      "album": "QUE LOUCURA",
+      "image": "https://i.scdn.co/image/ab67616d00001e0249248c0bd4b98457fce00a1a",
+      "url": "https://open.spotify.com/track/2J0Nuqw3GbSPRRrTO7P6V8"
     },
     {
       "name": "Japonesa",
@@ -39,25 +32,11 @@
       "url": "https://open.spotify.com/track/6HjtZWIo0bh0KLD8Tq4ujR"
     },
     {
-      "name": "QUE LOUCURA",
-      "artist": "DJ EXE, CACAU CHUU",
-      "album": "QUE LOUCURA",
-      "image": "https://i.scdn.co/image/ab67616d00001e0249248c0bd4b98457fce00a1a",
-      "url": "https://open.spotify.com/track/2J0Nuqw3GbSPRRrTO7P6V8"
-    },
-    {
       "name": "Preciso Urgentemente Falar Com Cassiano",
       "artist": "Sandra Sá",
       "album": "Sandra de Sá - 1982",
       "image": "https://i.scdn.co/image/ab67616d00001e0207f88758617b62b932fd2850",
       "url": "https://open.spotify.com/track/36l0ta3kavAa15dySyqCY0"
-    },
-    {
-      "name": "La Vida Tombola",
-      "artist": "Manu Chao",
-      "album": "La Radiolina",
-      "image": "https://i.scdn.co/image/ab67616d00001e02e37f9a3fdedc3d7dc2c49b26",
-      "url": "https://open.spotify.com/track/3U34tMYhMbr6tBWZdCUp6f"
     },
     {
       "name": "Dilema",
@@ -102,20 +81,6 @@
       "url": "https://open.spotify.com/track/0eVnhQNFTRZXOIhHZNLX85"
     },
     {
-      "name": "Reloginho",
-      "artist": "Nêgo Jhá",
-      "album": "Reloginho",
-      "image": "https://i.scdn.co/image/ab67616d00001e025ada647da9fe6bb4a12d5892",
-      "url": "https://open.spotify.com/track/0rj1IT0oVeN9fomV6LjQye"
-    },
-    {
-      "name": "One (Your Name) (feat. Pharrell Williams) - Radio Edit",
-      "artist": "Swedish House Mafia, Pharrell Williams",
-      "album": "One (Your Name) (feat. Pharrell Williams)",
-      "image": "https://i.scdn.co/image/ab67616d00001e02a79d98e61b1751c5bd2f70c9",
-      "url": "https://open.spotify.com/track/1ULtmkZQia2op5KeeNHCCs"
-    },
-    {
       "name": "Sinto Sua Falta / Namoro Escondido / 12 Horas - Ao Vivo",
       "artist": "Di Propósito, Yan, Vitor Limma",
       "album": "Encontrin 3 (Ao Vivo)",
@@ -130,18 +95,53 @@
       "url": "https://open.spotify.com/track/2SnJmKJAp8fPJ9WV5eqs6g"
     },
     {
-      "name": "Falador Passa Mal",
-      "artist": "Os Originais Do Samba",
-      "album": "É Preciso Cantar",
-      "image": "https://i.scdn.co/image/ab67616d00001e02737412b17d06dc42e1995ea1",
-      "url": "https://open.spotify.com/track/2bKOB6DLw8inrQC8UmghQN"
-    },
-    {
       "name": "Despedida",
       "artist": "Mestre Cupijó e Seu Ritmo",
       "album": "Jambú E Os Míticos Sons Da Amazônia (Analog Africa No. 28)",
       "image": "https://i.scdn.co/image/ab67616d00001e02ba15c7976c7071766df335c9",
       "url": "https://open.spotify.com/track/2kx8JGv0XBJQycGGcVl8N5"
+    },
+    {
+      "name": "Rosetta Tharpe",
+      "artist": "Nill, Ryam Beatz",
+      "album": "Good Smell, Vol. 2",
+      "image": "https://i.scdn.co/image/ab67616d00001e02f35cab9280102a49d5a2011e",
+      "url": "https://open.spotify.com/track/3f2uHape2pYafBuH6gmidF"
+    },
+    {
+      "name": "From U. S. Of Piauí",
+      "artist": "Luiz Gonzaga",
+      "album": "Aquilo Bom!",
+      "image": "https://i.scdn.co/image/ab67616d00001e0241436672034df08c16ab82e7",
+      "url": "https://open.spotify.com/track/3rjyGiPpGYddhLVG8jhBXF"
+    },
+    {
+      "name": "Too Many Man",
+      "artist": "Skepta, BBK",
+      "album": "Microphone Champion",
+      "image": "https://i.scdn.co/image/ab67616d00001e02b486c6e0d87d497199b5c127",
+      "url": "https://open.spotify.com/track/5iWkcEcUfymaq0POyWCbBQ"
+    },
+    {
+      "name": "Olhos Coloridos - Ao Vivo",
+      "artist": "Sandra Sá",
+      "album": "Música Preta Brasileira",
+      "image": "https://i.scdn.co/image/ab67616d00001e02a3eb09a6c01e4cbdb9cf807c",
+      "url": "https://open.spotify.com/track/7JSFeWjBBXKduf6SV8rzwp"
+    },
+    {
+      "name": "Chega no Swingue (Ao Vivo)",
+      "artist": "Seu Jorge",
+      "album": "Musicas para Churrasco, Vol.1 (Ao Vivo) [Delux Edition]",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e2e185d7dab2943d0e87b4ce",
+      "url": "https://open.spotify.com/track/7n2rHpcdLlvO7tPl67Q8nj"
+    },
+    {
+      "name": "Suedehead - 2011 Remaster",
+      "artist": "Morrissey",
+      "album": "Viva Hate (2011 Remaster)",
+      "image": "https://i.scdn.co/image/ab67616d00001e022342599df84b5b444a860840",
+      "url": "https://open.spotify.com/track/0kA5scXMiaO5Ms2GQ4pRWa"
     }
   ]
 }
