@@ -1,56 +1,14 @@
 {
-  "generated_at": "2026-09-21T17:59:27.263Z",
+  "generated_at": "2026-09-28T19:23:33.107Z",
   "range": "short_term",
   "range_label": "nas últimas 4 semanas",
   "tracks": [
-    {
-      "name": "Raton",
-      "artist": "Robson Jorge, Lincoln Olivetti",
-      "album": "Robson Jorge e Lincoln Olivetti",
-      "image": "https://i.scdn.co/image/ab67616d00001e023bcd1849d72fd6d81bd69142",
-      "url": "https://open.spotify.com/track/5yPqoxSrQWONW0yBYOXrgi"
-    },
     {
       "name": "Piriguete",
       "artist": "MC Papo",
       "album": "Clássicos",
       "image": "https://i.scdn.co/image/ab67616d00001e02ff8db72ba4ed650c57b1945f",
       "url": "https://open.spotify.com/track/4mKIErFtteoWocfjoTicL7"
-    },
-    {
-      "name": "Dilema",
-      "artist": "Emílio Santiago",
-      "album": "Aquarela Brasileira 7",
-      "image": "https://i.scdn.co/image/ab67616d00001e02c8505f126c5a320a6c3ad8a1",
-      "url": "https://open.spotify.com/track/7MfDBnCpfBWlACAURU2dFP"
-    },
-    {
-      "name": "Mingau de Açai",
-      "artist": "Mestre Cupijó e Seu Ritmo",
-      "album": "Siriá (Analog Africa No. 16)",
-      "image": "https://i.scdn.co/image/ab67616d00001e02074ff39aef3046e470db59b1",
-      "url": "https://open.spotify.com/track/1s2va8g3aG5xNZANRUbid6"
-    },
-    {
-      "name": "QUE LOUCURA",
-      "artist": "DJ EXE, CACAU CHUU",
-      "album": "QUE LOUCURA",
-      "image": "https://i.scdn.co/image/ab67616d00001e0249248c0bd4b98457fce00a1a",
-      "url": "https://open.spotify.com/track/2J0Nuqw3GbSPRRrTO7P6V8"
-    },
-    {
-      "name": "Duvido - Ao Vivo",
-      "artist": "Turma do Pagode, Ferrugem, Mumuzinho",
-      "album": "Mixturadin 3 (Ao Vivo)",
-      "image": "https://i.scdn.co/image/ab67616d00001e026f2f9e9fa139623cdd828c24",
-      "url": "https://open.spotify.com/track/14KMQgJYGx0WMwmSLRnlHd"
-    },
-    {
-      "name": "Japonesa",
-      "artist": "Seu Jorge",
-      "album": "Musica para Churrasco, Vol. 1",
-      "image": "https://i.scdn.co/image/ab67616d00001e02931e41642ebab615fdfce070",
-      "url": "https://open.spotify.com/track/4sb5rPCnaHVR7nCkfcCUIC"
     },
     {
       "name": "DotA - Radio Edit",
@@ -60,27 +18,6 @@
       "url": "https://open.spotify.com/track/6HjtZWIo0bh0KLD8Tq4ujR"
     },
     {
-      "name": "Preciso Urgentemente Falar Com Cassiano",
-      "artist": "Sandra Sá",
-      "album": "Sandra de Sá - 1982",
-      "image": "https://i.scdn.co/image/ab67616d00001e0207f88758617b62b932fd2850",
-      "url": "https://open.spotify.com/track/36l0ta3kavAa15dySyqCY0"
-    },
-    {
-      "name": "Pra Mim Não É",
-      "artist": "Sorriso Maroto",
-      "album": "Sinais",
-      "image": "https://i.scdn.co/image/ab67616d00001e022d7c44c7d0fec3f7aa19c8a6",
-      "url": "https://open.spotify.com/track/3fXVrp2kh3EhKxmr4Z4Tla"
-    },
-    {
-      "name": "Dano Sarrada - Remix",
-      "artist": "Marina Sena, Japãozin",
-      "album": "Dano Sarrada (Remix)",
-      "image": "https://i.scdn.co/image/ab67616d00001e02f881105e48fe31955156100b",
-      "url": "https://open.spotify.com/track/0Kl8AuDEnnEA7UtCKov4Op"
-    },
-    {
       "name": "Sinto Sua Falta / Namoro Escondido / 12 Horas - Ao Vivo",
       "artist": "Di Propósito, Yan, Vitor Limma",
       "album": "Encontrin 3 (Ao Vivo)",
@@ -88,32 +25,11 @@
       "url": "https://open.spotify.com/track/1Umgv8Mx8x4i4NyM1w5ZtS"
     },
     {
-      "name": "Ginga",
-      "artist": "Robson Jorge, Lincoln Olivetti",
-      "album": "Robson Jorge e Lincoln Olivetti",
-      "image": "https://i.scdn.co/image/ab67616d00001e023bcd1849d72fd6d81bd69142",
-      "url": "https://open.spotify.com/track/2KDF5lrsQNBN0a89SwkwDg"
-    },
-    {
-      "name": "Rosetta Tharpe",
-      "artist": "Nill, Ryam Beatz",
-      "album": "Good Smell, Vol. 2",
-      "image": "https://i.scdn.co/image/ab67616d00001e02f35cab9280102a49d5a2011e",
-      "url": "https://open.spotify.com/track/3f2uHape2pYafBuH6gmidF"
-    },
-    {
-      "name": "What You Know",
-      "artist": "Two Door Cinema Club",
-      "album": "Tourist History",
-      "image": "https://i.scdn.co/image/ab67616d00001e02852930b799f484bf60faacb2",
-      "url": "https://open.spotify.com/track/4iZxeyibg6w4EFCOoAQ6Eh"
-    },
-    {
-      "name": "Aquecimento das Dancinhas Baile da Vintém",
-      "artist": "NEVOEIRO FAIXA PRETA, DJ Juninho",
-      "album": "Aquecimento das Dancinhas Baile da Vintém",
-      "image": "https://i.scdn.co/image/ab67616d00001e02185cfa8b0d370b70a7cc54bf",
-      "url": "https://open.spotify.com/track/5oMIZcdZsmrEjqk2ERuI6T"
+      "name": "Japonesa",
+      "artist": "Seu Jorge",
+      "album": "Musica para Churrasco, Vol. 1",
+      "image": "https://i.scdn.co/image/ab67616d00001e02931e41642ebab615fdfce070",
+      "url": "https://open.spotify.com/track/4sb5rPCnaHVR7nCkfcCUIC"
     },
     {
       "name": "Mister Niterói",
@@ -130,11 +46,88 @@
       "url": "https://open.spotify.com/track/0eVnhQNFTRZXOIhHZNLX85"
     },
     {
-      "name": "Meu ébano",
-      "artist": "Alcione",
-      "album": "Uma nova paixão",
-      "image": "https://i.scdn.co/image/ab67616d00001e02694a83ca187aaf177074b634",
-      "url": "https://open.spotify.com/track/0nmEuK27DMGbYmSdh6NtKB"
+      "name": "Dani California",
+      "artist": "Red Hot Chili Peppers",
+      "album": "Stadium Arcadium",
+      "image": "https://i.scdn.co/image/ab67616d00001e0209fd83d32aee93dceba78517",
+      "url": "https://open.spotify.com/track/10Nmj3JCNoMeBQ87uw5j8k"
+    },
+    {
+      "name": "After Party",
+      "artist": "Don Toliver",
+      "album": "Heaven Or Hell",
+      "image": "https://i.scdn.co/image/ab67616d00001e029d04d25e732c593fb94e7193",
+      "url": "https://open.spotify.com/track/527k23H0A4Q0UJN3vGs0Da"
+    },
+    {
+      "name": "Too Many Man",
+      "artist": "Skepta, BBK",
+      "album": "Microphone Champion",
+      "image": "https://i.scdn.co/image/ab67616d00001e02b486c6e0d87d497199b5c127",
+      "url": "https://open.spotify.com/track/5iWkcEcUfymaq0POyWCbBQ"
+    },
+    {
+      "name": "Resenha de Ex-Love",
+      "artist": "J. Eskine, Alef Donk",
+      "album": "O Que Bate É Maluquice",
+      "image": "https://i.scdn.co/image/ab67616d00001e0265d5ee1c06aae7b0994e57f8",
+      "url": "https://open.spotify.com/track/5wV5dO1GOI4srs4Um5cJXo"
+    },
+    {
+      "name": "Olhos Coloridos - Ao Vivo",
+      "artist": "Sandra Sá",
+      "album": "Música Preta Brasileira",
+      "image": "https://i.scdn.co/image/ab67616d00001e02a3eb09a6c01e4cbdb9cf807c",
+      "url": "https://open.spotify.com/track/7JSFeWjBBXKduf6SV8rzwp"
+    },
+    {
+      "name": "Chega no Swingue (Ao Vivo)",
+      "artist": "Seu Jorge",
+      "album": "Musicas para Churrasco, Vol.1 (Ao Vivo) [Delux Edition]",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e2e185d7dab2943d0e87b4ce",
+      "url": "https://open.spotify.com/track/7n2rHpcdLlvO7tPl67Q8nj"
+    },
+    {
+      "name": "Não Adianta",
+      "artist": "Trio Mocoto",
+      "album": "Trio Mocoto",
+      "image": "https://i.scdn.co/image/ab67616d00001e0243f24970fcc374daa0c35dcd",
+      "url": "https://open.spotify.com/track/7rud54XCjLv3AQbaUAtxU1"
+    },
+    {
+      "name": "Dano Sarrada - Remix",
+      "artist": "Marina Sena, Japãozin",
+      "album": "Dano Sarrada (Remix)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02f881105e48fe31955156100b",
+      "url": "https://open.spotify.com/track/0Kl8AuDEnnEA7UtCKov4Op"
+    },
+    {
+      "name": "Suedehead - 2011 Remaster",
+      "artist": "Morrissey",
+      "album": "Viva Hate (2011 Remaster)",
+      "image": "https://i.scdn.co/image/ab67616d00001e022342599df84b5b444a860840",
+      "url": "https://open.spotify.com/track/0kA5scXMiaO5Ms2GQ4pRWa"
+    },
+    {
+      "name": "Dreams",
+      "artist": "Beck",
+      "album": "Colors",
+      "image": "https://i.scdn.co/image/ab67616d00001e0285c5d4eeba7c22b3df57e054",
+      "url": "https://open.spotify.com/track/14zhqtMI5xHrfCFCLhFcsn"
+    },
+    {
+      "name": "Follow Me",
+      "artist": "Oppidan",
+      "album": "Follow Me / Okay",
+      "image": "https://i.scdn.co/image/ab67616d00001e024a4ecc2a847f6a50a2e7979d",
+      "url": "https://open.spotify.com/track/1PKbKI4i9kKAnnaLYljUPm"
+    },
+    {
+      "name": "(Get Up I Feel Like Being A) Sex Machine, Pt. 1 - Single Version",
+      "artist": "James Brown",
+      "album": "The 50th Anniversary Collection",
+      "image": "https://i.scdn.co/image/ab67616d00001e02d76117186d0ad2b607e9fe3b",
+      "url": "https://open.spotify.com/track/1b1WpCLit4tmuMm70vluXU"
     },
     {
       "name": "Despedida",
@@ -142,6 +135,13 @@
       "album": "Jambú E Os Míticos Sons Da Amazônia (Analog Africa No. 28)",
       "image": "https://i.scdn.co/image/ab67616d00001e02ba15c7976c7071766df335c9",
       "url": "https://open.spotify.com/track/2kx8JGv0XBJQycGGcVl8N5"
+    },
+    {
+      "name": "Nowhere Fast - 2011 Remaster",
+      "artist": "The Smiths",
+      "album": "Meat Is Murder",
+      "image": "https://i.scdn.co/image/ab67616d00001e02ac345598e7697a319cb5b460",
+      "url": "https://open.spotify.com/track/3aI6N8o4ZlkPdq479tqKze"
     }
   ]
 }
