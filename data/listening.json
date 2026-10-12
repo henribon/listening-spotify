@@ -1,8 +1,22 @@
 {
-  "generated_at": "2026-09-28T19:23:33.107Z",
+  "generated_at": "2026-10-12T21:02:15.994Z",
   "range": "short_term",
   "range_label": "nas últimas 4 semanas",
   "tracks": [
+    {
+      "name": "QUE CALOR",
+      "artist": "Los Pibes Chorros",
+      "album": "LA HISTORIA",
+      "image": "https://i.scdn.co/image/ab67616d00001e0274bc65b3bd1b570385e2014f",
+      "url": "https://open.spotify.com/track/0zYpBRSAIKR2DnEkTUumzX"
+    },
+    {
+      "name": "LLEGAMOS LOS PIBES CHORROS",
+      "artist": "Los Pibes Chorros",
+      "album": "LA HISTORIA",
+      "image": "https://i.scdn.co/image/ab67616d00001e0274bc65b3bd1b570385e2014f",
+      "url": "https://open.spotify.com/track/69k2gSq3vdOcjDR2au4ejf"
+    },
     {
       "name": "Piriguete",
       "artist": "MC Papo",
@@ -11,39 +25,39 @@
       "url": "https://open.spotify.com/track/4mKIErFtteoWocfjoTicL7"
     },
     {
-      "name": "DotA - Radio Edit",
-      "artist": "Basshunter",
-      "album": "LOL (2008 yellow bonus version/no videos_France)",
-      "image": "https://i.scdn.co/image/ab67616d00001e024699e8c0e35827c9249d1618",
-      "url": "https://open.spotify.com/track/6HjtZWIo0bh0KLD8Tq4ujR"
+      "name": "Dilema",
+      "artist": "Emílio Santiago",
+      "album": "Aquarela Brasileira 7",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c8505f126c5a320a6c3ad8a1",
+      "url": "https://open.spotify.com/track/7MfDBnCpfBWlACAURU2dFP"
     },
     {
-      "name": "Sinto Sua Falta / Namoro Escondido / 12 Horas - Ao Vivo",
-      "artist": "Di Propósito, Yan, Vitor Limma",
-      "album": "Encontrin 3 (Ao Vivo)",
-      "image": "https://i.scdn.co/image/ab67616d00001e0285c5c6cd25df50301fc7783b",
-      "url": "https://open.spotify.com/track/1Umgv8Mx8x4i4NyM1w5ZtS"
+      "name": "Get Lucky (Radio Edit) [feat. Pharrell Williams and Nile Rodgers]",
+      "artist": "Daft Punk, Pharrell Williams, Nile Rodgers",
+      "album": "Get Lucky (Radio Edit) [feat. Pharrell Williams and Nile Rodgers]",
+      "image": "https://i.scdn.co/image/ab67616d00001e0219a88dd5c7118e87d7b1619e",
+      "url": "https://open.spotify.com/track/2Foc5Q5nqNiosCNqttzHof"
     },
     {
-      "name": "Japonesa",
+      "name": "Crazy - 2022 Remaster",
+      "artist": "Seal",
+      "album": "Seal (Deluxe Edition)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02d214956335b4cfab9e302c81",
+      "url": "https://open.spotify.com/track/2KP6bTmxOSEVMXAnbapkpa"
+    },
+    {
+      "name": "Chega no Swingue (Ao Vivo)",
       "artist": "Seu Jorge",
-      "album": "Musica para Churrasco, Vol. 1",
-      "image": "https://i.scdn.co/image/ab67616d00001e02931e41642ebab615fdfce070",
-      "url": "https://open.spotify.com/track/4sb5rPCnaHVR7nCkfcCUIC"
+      "album": "Musicas para Churrasco, Vol.1 (Ao Vivo) [Delux Edition]",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e2e185d7dab2943d0e87b4ce",
+      "url": "https://open.spotify.com/track/7n2rHpcdLlvO7tPl67Q8nj"
     },
     {
-      "name": "Mister Niterói",
-      "artist": "Black Alien",
-      "album": "Babylon By Gus Vol. 1 - o Ano do Macaco",
-      "image": "https://i.scdn.co/image/ab67616d00001e022b1678cbc2c4ec91c6da1cf1",
-      "url": "https://open.spotify.com/track/6eQjwvQmfY4vBs4c9IKiuW"
-    },
-    {
-      "name": "Dedicada a ela",
-      "artist": "Arthur Verocai",
-      "album": "Arthur Verocai",
-      "image": "https://i.scdn.co/image/ab67616d00001e02816dff6b953279497b0e7732",
-      "url": "https://open.spotify.com/track/0eVnhQNFTRZXOIhHZNLX85"
+      "name": "You Used to Love Me - Puff Daddy Mix",
+      "artist": "Faith Evans, Diddy",
+      "album": "You Used to Love Me (Remix)",
+      "image": "https://i.scdn.co/image/ab67616d00001e0200aa646928219d639f5aecb4",
+      "url": "https://open.spotify.com/track/0SHiuhUbQcb1zmz2cK0HeR"
     },
     {
       "name": "Dani California",
@@ -53,18 +67,18 @@
       "url": "https://open.spotify.com/track/10Nmj3JCNoMeBQ87uw5j8k"
     },
     {
+      "name": "Lady - Hear Me Tonight",
+      "artist": "Modjo",
+      "album": "Modjo (Remastered)",
+      "image": "https://i.scdn.co/image/ab67616d00001e0254c5c304064df85d61253ac7",
+      "url": "https://open.spotify.com/track/49X0LAl6faAusYq02PRAY6"
+    },
+    {
       "name": "After Party",
       "artist": "Don Toliver",
       "album": "Heaven Or Hell",
       "image": "https://i.scdn.co/image/ab67616d00001e029d04d25e732c593fb94e7193",
       "url": "https://open.spotify.com/track/527k23H0A4Q0UJN3vGs0Da"
-    },
-    {
-      "name": "Too Many Man",
-      "artist": "Skepta, BBK",
-      "album": "Microphone Champion",
-      "image": "https://i.scdn.co/image/ab67616d00001e02b486c6e0d87d497199b5c127",
-      "url": "https://open.spotify.com/track/5iWkcEcUfymaq0POyWCbBQ"
     },
     {
       "name": "Resenha de Ex-Love",
@@ -81,18 +95,18 @@
       "url": "https://open.spotify.com/track/7JSFeWjBBXKduf6SV8rzwp"
     },
     {
-      "name": "Chega no Swingue (Ao Vivo)",
-      "artist": "Seu Jorge",
-      "album": "Musicas para Churrasco, Vol.1 (Ao Vivo) [Delux Edition]",
-      "image": "https://i.scdn.co/image/ab67616d00001e02e2e185d7dab2943d0e87b4ce",
-      "url": "https://open.spotify.com/track/7n2rHpcdLlvO7tPl67Q8nj"
+      "name": "BURN IT DOWN",
+      "artist": "Linkin Park",
+      "album": "LIVING THINGS",
+      "image": "https://i.scdn.co/image/ab67616d00001e02987fb4c5ec8790e9f637a4a4",
+      "url": "https://open.spotify.com/track/7oVEtyuv9NBmnytsCIsY5I"
     },
     {
-      "name": "Não Adianta",
-      "artist": "Trio Mocoto",
-      "album": "Trio Mocoto",
-      "image": "https://i.scdn.co/image/ab67616d00001e0243f24970fcc374daa0c35dcd",
-      "url": "https://open.spotify.com/track/7rud54XCjLv3AQbaUAtxU1"
+      "name": "Trista Pena",
+      "artist": "Gipsy Kings",
+      "album": "Mosaique",
+      "image": "https://i.scdn.co/image/ab67616d00001e0272765b7b297c0ce4d2b20655",
+      "url": "https://open.spotify.com/track/0IbhAeD7EXyxGovwu5n7Wa"
     },
     {
       "name": "Dano Sarrada - Remix",
@@ -102,25 +116,11 @@
       "url": "https://open.spotify.com/track/0Kl8AuDEnnEA7UtCKov4Op"
     },
     {
-      "name": "Suedehead - 2011 Remaster",
-      "artist": "Morrissey",
-      "album": "Viva Hate (2011 Remaster)",
-      "image": "https://i.scdn.co/image/ab67616d00001e022342599df84b5b444a860840",
-      "url": "https://open.spotify.com/track/0kA5scXMiaO5Ms2GQ4pRWa"
-    },
-    {
-      "name": "Dreams",
-      "artist": "Beck",
-      "album": "Colors",
-      "image": "https://i.scdn.co/image/ab67616d00001e0285c5d4eeba7c22b3df57e054",
-      "url": "https://open.spotify.com/track/14zhqtMI5xHrfCFCLhFcsn"
-    },
-    {
-      "name": "Follow Me",
-      "artist": "Oppidan",
-      "album": "Follow Me / Okay",
-      "image": "https://i.scdn.co/image/ab67616d00001e024a4ecc2a847f6a50a2e7979d",
-      "url": "https://open.spotify.com/track/1PKbKI4i9kKAnnaLYljUPm"
+      "name": "Sinto Sua Falta / Namoro Escondido / 12 Horas - Ao Vivo",
+      "artist": "Di Propósito, Yan, Vitor Limma",
+      "album": "Encontrin 3 (Ao Vivo)",
+      "image": "https://i.scdn.co/image/ab67616d00001e0285c5c6cd25df50301fc7783b",
+      "url": "https://open.spotify.com/track/1Umgv8Mx8x4i4NyM1w5ZtS"
     },
     {
       "name": "(Get Up I Feel Like Being A) Sex Machine, Pt. 1 - Single Version",
@@ -130,18 +130,18 @@
       "url": "https://open.spotify.com/track/1b1WpCLit4tmuMm70vluXU"
     },
     {
-      "name": "Despedida",
-      "artist": "Mestre Cupijó e Seu Ritmo",
-      "album": "Jambú E Os Míticos Sons Da Amazônia (Analog Africa No. 28)",
-      "image": "https://i.scdn.co/image/ab67616d00001e02ba15c7976c7071766df335c9",
-      "url": "https://open.spotify.com/track/2kx8JGv0XBJQycGGcVl8N5"
+      "name": "Saudade e Solidão",
+      "artist": "Vitor Fernandes",
+      "album": "Diferente de Tudo",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c3efdab9867316bc3bae10b1",
+      "url": "https://open.spotify.com/track/1seqQVkGMQJZ2tStdvXYSz"
     },
     {
-      "name": "Nowhere Fast - 2011 Remaster",
-      "artist": "The Smiths",
-      "album": "Meat Is Murder",
-      "image": "https://i.scdn.co/image/ab67616d00001e02ac345598e7697a319cb5b460",
-      "url": "https://open.spotify.com/track/3aI6N8o4ZlkPdq479tqKze"
+      "name": "Novo Dia",
+      "artist": "Síntese",
+      "album": "Trilha para o Desencanto da Ilusão, Vol.1: Amem",
+      "image": "https://i.scdn.co/image/ab67616d00001e0212121ae82ea32e70fc9119df",
+      "url": "https://open.spotify.com/track/2hS9DEkYKOTJ4C36amKquD"
     }
   ]
 }
