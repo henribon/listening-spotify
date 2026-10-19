@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T21:02:15.994Z",
+  "generated_at": "2026-10-19T18:28:50.693Z",
   "range": "short_term",
   "range_label": "nas últimas 4 semanas",
   "tracks": [
@@ -18,11 +18,11 @@
       "url": "https://open.spotify.com/track/69k2gSq3vdOcjDR2au4ejf"
     },
     {
-      "name": "Piriguete",
-      "artist": "MC Papo",
-      "album": "Clássicos",
-      "image": "https://i.scdn.co/image/ab67616d00001e02ff8db72ba4ed650c57b1945f",
-      "url": "https://open.spotify.com/track/4mKIErFtteoWocfjoTicL7"
+      "name": "Chega no Swingue (Ao Vivo)",
+      "artist": "Seu Jorge",
+      "album": "Musicas para Churrasco, Vol.1 (Ao Vivo) [Delux Edition]",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e2e185d7dab2943d0e87b4ce",
+      "url": "https://open.spotify.com/track/7n2rHpcdLlvO7tPl67Q8nj"
     },
     {
       "name": "Dilema",
@@ -39,6 +39,13 @@
       "url": "https://open.spotify.com/track/2Foc5Q5nqNiosCNqttzHof"
     },
     {
+      "name": "Bella Menina",
+      "artist": "Lord Funk, Moar",
+      "album": "Nova Onda",
+      "image": "https://i.scdn.co/image/ab67616d00001e0257b21da391cac10bb4474c44",
+      "url": "https://open.spotify.com/track/3aXobk9ENxA1Z1sXvxmVNs"
+    },
+    {
       "name": "Crazy - 2022 Remaster",
       "artist": "Seal",
       "album": "Seal (Deluxe Edition)",
@@ -46,18 +53,18 @@
       "url": "https://open.spotify.com/track/2KP6bTmxOSEVMXAnbapkpa"
     },
     {
-      "name": "Chega no Swingue (Ao Vivo)",
-      "artist": "Seu Jorge",
-      "album": "Musicas para Churrasco, Vol.1 (Ao Vivo) [Delux Edition]",
-      "image": "https://i.scdn.co/image/ab67616d00001e02e2e185d7dab2943d0e87b4ce",
-      "url": "https://open.spotify.com/track/7n2rHpcdLlvO7tPl67Q8nj"
-    },
-    {
       "name": "You Used to Love Me - Puff Daddy Mix",
       "artist": "Faith Evans, Diddy",
       "album": "You Used to Love Me (Remix)",
       "image": "https://i.scdn.co/image/ab67616d00001e0200aa646928219d639f5aecb4",
       "url": "https://open.spotify.com/track/0SHiuhUbQcb1zmz2cK0HeR"
+    },
+    {
+      "name": "Give It To Me",
+      "artist": "Timbaland, Justin Timberlake, Nelly Furtado",
+      "album": "Shock Value",
+      "image": "https://i.scdn.co/image/ab67616d00001e02755a9f1e89ad8e8cf91d4956",
+      "url": "https://open.spotify.com/track/0wbDgMuAoy7O7pL3a69uZx"
     },
     {
       "name": "Dani California",
@@ -88,11 +95,11 @@
       "url": "https://open.spotify.com/track/5wV5dO1GOI4srs4Um5cJXo"
     },
     {
-      "name": "Olhos Coloridos - Ao Vivo",
-      "artist": "Sandra Sá",
-      "album": "Música Preta Brasileira",
-      "image": "https://i.scdn.co/image/ab67616d00001e02a3eb09a6c01e4cbdb9cf807c",
-      "url": "https://open.spotify.com/track/7JSFeWjBBXKduf6SV8rzwp"
+      "name": "Comanche",
+      "artist": "The Revels",
+      "album": "Tequila Now",
+      "image": "https://i.scdn.co/image/ab67616d00001e0201591eba69e4856272fe638d",
+      "url": "https://open.spotify.com/track/63CyNtKzJoXzBvhEiTsbC4"
     },
     {
       "name": "BURN IT DOWN",
@@ -109,32 +116,25 @@
       "url": "https://open.spotify.com/track/0IbhAeD7EXyxGovwu5n7Wa"
     },
     {
-      "name": "Dano Sarrada - Remix",
-      "artist": "Marina Sena, Japãozin",
-      "album": "Dano Sarrada (Remix)",
-      "image": "https://i.scdn.co/image/ab67616d00001e02f881105e48fe31955156100b",
-      "url": "https://open.spotify.com/track/0Kl8AuDEnnEA7UtCKov4Op"
-    },
-    {
-      "name": "Sinto Sua Falta / Namoro Escondido / 12 Horas - Ao Vivo",
-      "artist": "Di Propósito, Yan, Vitor Limma",
-      "album": "Encontrin 3 (Ao Vivo)",
-      "image": "https://i.scdn.co/image/ab67616d00001e0285c5c6cd25df50301fc7783b",
-      "url": "https://open.spotify.com/track/1Umgv8Mx8x4i4NyM1w5ZtS"
-    },
-    {
-      "name": "(Get Up I Feel Like Being A) Sex Machine, Pt. 1 - Single Version",
-      "artist": "James Brown",
-      "album": "The 50th Anniversary Collection",
-      "image": "https://i.scdn.co/image/ab67616d00001e02d76117186d0ad2b607e9fe3b",
-      "url": "https://open.spotify.com/track/1b1WpCLit4tmuMm70vluXU"
+      "name": "Bullet From A Gun",
+      "artist": "Skepta",
+      "album": "Ignorance is Bliss",
+      "image": "https://i.scdn.co/image/ab67616d00001e0248f2487a18a735f457404eb9",
+      "url": "https://open.spotify.com/track/0gEV1AR0gd59DzrMJalYcK"
     },
     {
       "name": "Saudade e Solidão",
       "artist": "Vitor Fernandes",
       "album": "Diferente de Tudo",
-      "image": "https://i.scdn.co/image/ab67616d00001e02c3efdab9867316bc3bae10b1",
-      "url": "https://open.spotify.com/track/1seqQVkGMQJZ2tStdvXYSz"
+      "image": "https://i.scdn.co/image/ab67616d00001e02b0c4dc6765676d04571df2fd",
+      "url": "https://open.spotify.com/track/1IMZTTZcHVjVSOBU0lpsD0"
+    },
+    {
+      "name": "Everything We Need",
+      "artist": "Kanye West, Ty Dolla $ign, Ant Clemons",
+      "album": "JESUS IS KING",
+      "image": "https://i.scdn.co/image/ab67616d00001e021bb797bbfe2480650b6c2964",
+      "url": "https://open.spotify.com/track/24bnCCysWnbNRNUT4LpHcP"
     },
     {
       "name": "Novo Dia",
