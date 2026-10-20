@@ -95,20 +95,17 @@ Depois que os três estiverem lá, apaga o `secrets.env`.
 
 Como o CNAME `bonbap.com.br` está no repo de user site (`henribon.github.io`),
 este project site é servido em `bonbap.com.br/listening-spotify/` — mesmo
-domínio, então a página busca o JSON por caminho relativo e a fonte Valmist de
-`/fonts/` funciona sem cópia.
+domínio, então a página busca o JSON por caminho relativo. A fonte é a mesma
+da home: Inter Tight, servida pelo Google Fonts.
 
 ### 5. Linka no bonbap.com.br
 
 No `index.html` do site, dentro do `<nav>`:
 
 ```html
-<a class="link" href="/listening-spotify/">
-  <span>
-    <span class="name">Ouvindo</span>
-    <span class="desc">As músicas que mais tenho escutado</span>
-  </span>
-  <span class="go" aria-hidden="true">&rarr;</span>
+<a class="door reveal" style="--d:.36s" href="/listening-spotify/">
+  <span class="label">Ouvindo no Spotify</span>
+  <span class="arr" aria-hidden="true">&#8599;</span>
 </a>
 ```
 

@@ -7,6 +7,9 @@
 <meta name="description" content="As músicas que mais ouvi no Spotify nas últimas semanas.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
 <link rel="preconnect" href="https://i.scdn.co" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&display=swap">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="ouvindo — bonbap">
@@ -15,21 +18,10 @@
 
 <style>
 /*
- * Mesmos tokens do bonbap.com.br.
- *
- * A fonte tem cópia própria aqui, com caminho relativo. Apontar pra
- * /fonts/ na raiz do domínio parecia econômico, mas amarra esta página a
- * um arquivo que vive noutro repositório — e enquanto ele não estivesse
- * publicado, o @font-face dava 404 em silêncio e o h1 caía no sans do
- * sistema.
+ * Mesmos tokens e mesma fonte do bonbap.com.br: Inter Tight pelo Google
+ * Fonts, igual à home. A Valmist que vinha empacotada aqui saiu — o título
+ * era a única letra do site que não aparecia em nenhuma outra página.
  */
-@font-face {
-  font-family: "Valmist";
-  src: url("fonts/TBJValmistDemo-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-}
-
 :root {
   --bg: #ffffff;
   --fg: #16161a;
@@ -57,7 +49,7 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--fg);
-  font: 400 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 500 16px/1.5 "Inter Tight", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -77,13 +69,12 @@ body {
 .back:hover, .back:focus-visible { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; }
 
 h1 {
-  font-family: Valmist, ui-sans-serif, system-ui, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: clamp(2.75rem, 11vw, 3.5rem);
   line-height: 1;
   text-transform: uppercase;
-  /* Caixa alta pede menos aperto que a caixa baixa. */
-  letter-spacing: 0;
+  /* Caixa alta pede menos aperto que a caixa baixa da marca na home. */
+  letter-spacing: -0.02em;
   margin: 0 0 0.75rem;
 }
 
