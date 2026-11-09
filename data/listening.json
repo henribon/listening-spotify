@@ -1,14 +1,21 @@
 {
-  "generated_at": "2026-11-02T21:29:46.165Z",
+  "generated_at": "2026-11-09T22:02:07.253Z",
   "range": "short_term",
   "range_label": "nas últimas 4 semanas",
   "tracks": [
     {
-      "name": "Llegamos los Pibes Chorros",
-      "artist": "Los Pibes Chorros, Magenta",
-      "album": "Solo Le Pido a Dios",
-      "image": "https://i.scdn.co/image/ab67616d00001e0286facb5ce45496aa9d821e47",
-      "url": "https://open.spotify.com/track/4nHxblCYu7x3rKpzYlOyVw"
+      "name": "TUCA DONKA",
+      "artist": "DJ FKU, CURSEDEVIL, Skorde",
+      "album": "TUCA DONKA",
+      "image": "https://i.scdn.co/image/ab67616d00001e029d6fdeae1a36f47bdded2961",
+      "url": "https://open.spotify.com/track/0fRZPudbhfzCRZQMJhPRcU"
+    },
+    {
+      "name": "Bullwinkle, Pt. II",
+      "artist": "The Centurians",
+      "album": "Surfers' Pajama Party (US Release)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02263f0ca16cd73c27e0975d0a",
+      "url": "https://open.spotify.com/track/5Hn7uZqDarw5VTNX1XluV3"
     },
     {
       "name": "Que calor",
@@ -18,11 +25,11 @@
       "url": "https://open.spotify.com/track/0RDDMvevLZkkBhAHP2mNpb"
     },
     {
-      "name": "TUCA DONKA",
-      "artist": "DJ FKU, CURSEDEVIL, Skorde",
-      "album": "TUCA DONKA",
-      "image": "https://i.scdn.co/image/ab67616d00001e029d6fdeae1a36f47bdded2961",
-      "url": "https://open.spotify.com/track/0fRZPudbhfzCRZQMJhPRcU"
+      "name": "Mingau de Açai",
+      "artist": "Mestre Cupijó e Seu Ritmo",
+      "album": "Siriá (Analog Africa No. 16)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02074ff39aef3046e470db59b1",
+      "url": "https://open.spotify.com/track/1s2va8g3aG5xNZANRUbid6"
     },
     {
       "name": "Everything We Need",
@@ -32,39 +39,32 @@
       "url": "https://open.spotify.com/track/24bnCCysWnbNRNUT4LpHcP"
     },
     {
-      "name": "Tive Razão - Version Studio",
-      "artist": "Seu Jorge, -M-, Pretinho da Serrinha",
-      "album": "Cru",
-      "image": "https://i.scdn.co/image/ab67616d00001e0248fd36a5f603cf1cfbd8128e",
-      "url": "https://open.spotify.com/track/2xaMV3NPiEHcd8tlSkGH2M"
+      "name": "Kiriê",
+      "artist": "Georgette",
+      "album": "A Moça do Mar",
+      "image": "https://i.scdn.co/image/ab67616d00001e02f63ef0b1eeeeb6a242cc4a35",
+      "url": "https://open.spotify.com/track/3O2Y5GFEHVHBIEWpLQJYbJ"
     },
     {
-      "name": "Preciso Urgentemente Falar Com Cassiano",
-      "artist": "Sandra Sá",
-      "album": "Sandra de Sá - 1982",
-      "image": "https://i.scdn.co/image/ab67616d00001e0207f88758617b62b932fd2850",
-      "url": "https://open.spotify.com/track/36l0ta3kavAa15dySyqCY0"
+      "name": "Llegamos los Pibes Chorros",
+      "artist": "Los Pibes Chorros, Magenta",
+      "album": "Solo Le Pido a Dios",
+      "image": "https://i.scdn.co/image/ab67616d00001e0286facb5ce45496aa9d821e47",
+      "url": "https://open.spotify.com/track/4nHxblCYu7x3rKpzYlOyVw"
     },
     {
-      "name": "Blue (Da Ba Dee) - Gabry Ponte Video Edit",
-      "artist": "Eiffel 65, Gabry Ponte",
-      "album": "Blue (Da Ba Dee)",
-      "image": "https://i.scdn.co/image/ab67616d00001e02121c39c86d8b05c14022edfe",
-      "url": "https://open.spotify.com/track/7lMIJ4EFWRVoAIPDpeGyM3"
+      "name": "DotA - Radio Edit",
+      "artist": "Basshunter",
+      "album": "LOL (2008 yellow bonus version/no videos_France)",
+      "image": "https://i.scdn.co/image/ab67616d00001e024699e8c0e35827c9249d1618",
+      "url": "https://open.spotify.com/track/6HjtZWIo0bh0KLD8Tq4ujR"
     },
     {
-      "name": "Chega no Swingue (Ao Vivo)",
-      "artist": "Seu Jorge",
-      "album": "Musicas para Churrasco, Vol.1 (Ao Vivo) [Delux Edition]",
-      "image": "https://i.scdn.co/image/ab67616d00001e02e2e185d7dab2943d0e87b4ce",
-      "url": "https://open.spotify.com/track/7n2rHpcdLlvO7tPl67Q8nj"
-    },
-    {
-      "name": "You Used to Love Me - Puff Daddy Mix",
-      "artist": "Faith Evans, Diddy",
-      "album": "You Used to Love Me (Remix)",
-      "image": "https://i.scdn.co/image/ab67616d00001e0200aa646928219d639f5aecb4",
-      "url": "https://open.spotify.com/track/0SHiuhUbQcb1zmz2cK0HeR"
+      "name": "I Don't Fuck With You",
+      "artist": "Big Sean, E-40",
+      "album": "Dark Sky Paradise",
+      "image": "https://i.scdn.co/image/ab67616d00001e0250192d5f728fea13fb3af203",
+      "url": "https://open.spotify.com/track/7FYH5AW3bVfZHJIQpq3UOA"
     },
     {
       "name": "Yègellé Tezeta",
@@ -74,11 +74,53 @@
       "url": "https://open.spotify.com/track/0fxjsll9jmmRgMFbwdp4Xg"
     },
     {
+      "name": "Despedida",
+      "artist": "Mestre Cupijó e Seu Ritmo",
+      "album": "Jambú E Os Míticos Sons Da Amazônia (Analog Africa No. 28)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02ba15c7976c7071766df335c9",
+      "url": "https://open.spotify.com/track/2kx8JGv0XBJQycGGcVl8N5"
+    },
+    {
+      "name": "Kiss from a Rose",
+      "artist": "Seal",
+      "album": "Seal",
+      "image": "https://i.scdn.co/image/ab67616d00001e0233d4866ed921300e8ef50808",
+      "url": "https://open.spotify.com/track/3YKptz29AsOlm7WAVnztBh"
+    },
+    {
       "name": "Bella Menina",
       "artist": "Lord Funk, Moar",
       "album": "Nova Onda",
       "image": "https://i.scdn.co/image/ab67616d00001e0257b21da391cac10bb4474c44",
       "url": "https://open.spotify.com/track/3aXobk9ENxA1Z1sXvxmVNs"
+    },
+    {
+      "name": "Hóstia",
+      "artist": "O Rappa",
+      "album": "7 Vezes",
+      "image": "https://i.scdn.co/image/ab67616d00001e02ed295f9029af12f98b7abb1a",
+      "url": "https://open.spotify.com/track/408HrdQ738YjLnovSTOUAg"
+    },
+    {
+      "name": "Feeling (feat. Larry June)",
+      "artist": "Freddie Gibbs, The Alchemist, Larry June",
+      "album": "Alfredo 2",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e098f51a1a2ebb827dc6099a",
+      "url": "https://open.spotify.com/track/4ig1U15Fek3EOm6lJppxu1"
+    },
+    {
+      "name": "Popular (with Playboi Carti & Madonna) - From The Idol Vol. 1 (Music from the HBO Original Series)",
+      "artist": "The Weeknd, Playboi Carti, Madonna",
+      "album": "Popular (Music from the HBO Original Series)",
+      "image": "https://i.scdn.co/image/ab67616d00001e024c8f092adc59b4bf4212389d",
+      "url": "https://open.spotify.com/track/6WzRpISELf3YglGAh7TXcG"
+    },
+    {
+      "name": "World, Hold On - FISHER Rework",
+      "artist": "Bob Sinclar, Steve Edwards, FISHER",
+      "album": "World, Hold On (FISHER Rework)",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c272f11aee228a5089cb4501",
+      "url": "https://open.spotify.com/track/6ryWXzeSbDX5cebOrgjMKL"
     },
     {
       "name": "Eu Vi Gnomos",
@@ -88,60 +130,18 @@
       "url": "https://open.spotify.com/track/1JMSUKYjUnI4BWcOWUDG37"
     },
     {
+      "name": "garota",
+      "artist": "Os Garotin",
+      "album": "OS GAROTIN DE SÃO GONÇALO",
+      "image": "https://i.scdn.co/image/ab67616d00001e02091ecec386a7f74aa484af1b",
+      "url": "https://open.spotify.com/track/1gWCSMEOmVFhltid7q8xTz"
+    },
+    {
       "name": "Red Label ou Ice",
       "artist": "Djavú, DJ Juninho Portugal",
       "album": "Ao Vivo em Itambé",
       "image": "https://i.scdn.co/image/ab67616d00001e02a1c9e34f4d8d82aa2b02fa4b",
       "url": "https://open.spotify.com/track/2LzzhIpgtcHhFCETB5rx2L"
-    },
-    {
-      "name": "Carinha de Neném",
-      "artist": "Japãozin",
-      "album": "Brabo dos Paredões",
-      "image": "https://i.scdn.co/image/ab67616d00001e027f0469add297a8e28095b564",
-      "url": "https://open.spotify.com/track/4bL8f3zRr9eqlnAPBF7jpg"
-    },
-    {
-      "name": "A Maldição do Samba",
-      "artist": "Marcelo D2",
-      "album": "A Procura da Batida Perfeita",
-      "image": "https://i.scdn.co/image/ab67616d00001e027561af38312cd5dd6009afa1",
-      "url": "https://open.spotify.com/track/5iq9tpz2zCZyl3DJr3fRhR"
-    },
-    {
-      "name": "Você pra Mim É Lucro",
-      "artist": "FBC, Pepito",
-      "album": "ASSALTOS E BATIDAS",
-      "image": "https://i.scdn.co/image/ab67616d00001e0206639d065ac10b66278df4fe",
-      "url": "https://open.spotify.com/track/66oXtcdPYl1SZrq57CeQGa"
-    },
-    {
-      "name": "Eu Bebo Sim",
-      "artist": "Elizeth Cardoso",
-      "album": "Disco De Ouro",
-      "image": "https://i.scdn.co/image/ab67616d00001e02caf5385473afda4b4dc622be",
-      "url": "https://open.spotify.com/track/6VnUfl3s6C8GCpvHnnh1KF"
-    },
-    {
-      "name": "Dia de Comemorar",
-      "artist": "Seu Jorge",
-      "album": "Musica para Churrasco, Vol. 1",
-      "image": "https://i.scdn.co/image/ab67616d00001e02931e41642ebab615fdfce070",
-      "url": "https://open.spotify.com/track/7v0rhX8vWlc3i7JXS4SvXW"
-    },
-    {
-      "name": "Give It To Me",
-      "artist": "Timbaland, Justin Timberlake, Nelly Furtado",
-      "album": "Shock Value",
-      "image": "https://i.scdn.co/image/ab67616d00001e02755a9f1e89ad8e8cf91d4956",
-      "url": "https://open.spotify.com/track/0wbDgMuAoy7O7pL3a69uZx"
-    },
-    {
-      "name": "Duvido - Ao Vivo",
-      "artist": "Turma do Pagode, Ferrugem, Mumuzinho",
-      "album": "Mixturadin 3 (Ao Vivo)",
-      "image": "https://i.scdn.co/image/ab67616d00001e026f2f9e9fa139623cdd828c24",
-      "url": "https://open.spotify.com/track/14KMQgJYGx0WMwmSLRnlHd"
     }
   ]
 }
